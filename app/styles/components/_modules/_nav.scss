@@ -1,0 +1,71 @@
+
+.navbar {
+	border-top: 2px solid $navy-blue;
+	border-bottom: 2px solid $navy-blue;
+	border-radius: 0;
+}
+
+.navbar-collapse {
+	@include breakpoint(small) {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+.navbar-toggle .icon-bar {
+	background-color: $red;
+}
+
+.nav.navbar-nav {
+	display: flex;
+	width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+	flex-flow: column wrap;
+	li {
+		margin-bottom: 0;
+	}
+	a {
+		margin-bottom: 0;
+		color: $navy-blue;
+		padding-left: 0;
+		padding-right: 0;
+		transition: all .15s;
+		&:hover, &:focus, &:active {
+			color: $red;
+		}
+		&.on {
+			color: $red;
+		}
+	}
+
+	@include breakpoint(small) {
+		flex-flow: row nowrap;
+		a {
+			padding-top: 30px;
+			padding-bottom: 30px;
+		}
+	}
+}
+
+.navbar .container {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.navbar-brand {
+	margin-bottom: 0;	
+	color: $navy-blue;
+		&:hover, &:focus, &:active {
+			color: $navy-blue;
+		}
+	@include breakpoint(small) {
+		display: none;
+	}
+}
+
+.nav:after, .nav:before, .navbar-collapse:after, .navbar-collapse:before, .navbar-header:after, .navbar-header:before, .navbar:after, .navbar:before,  {
+display: table;
+content: none;
+}

@@ -1,0 +1,125 @@
+/**
+*
+* Typography
+*
+**/
+
+// Just normalizing text
+// Recommend using padding instead of margin
+
+
+
+
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+}
+
+a, p, li, setquote, .cite {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 20px;
+  color: $light-font-color;
+  font-family: $base-font-family;
+}
+
+li {
+  margin-bottom: 5px;
+  // font-weight: 300;
+  // color: $light-font-color;
+  // line-height: 24px;
+}
+
+h1,h2,h3,h4 {
+  color: $navy-blue;
+  font-weight: 300;
+  line-height: 1.1;
+  // text-align: center;
+}
+h1,h2 {
+  // text-align: center;
+  // @include breakpoint(small) {
+  //   text-align: left;
+  // }
+}
+.left {
+  text-align: center;
+  @include breakpoint(small) {
+    text-align: left;
+  }
+}
+h1 {
+	font-size: 36px;
+  font-weight: 100;
+	@include breakpoint(small) {
+  		font-size: 36px;
+	}
+}
+
+h2 {
+	font-size: 28px;
+  margin-bottom: 20px;
+  @include breakpoint(small) {
+  	font-size: 42px;
+  	margin-bottom: 30px;
+  }
+}
+
+h3 {
+	font-size: 24px;
+	font-weight: 500;
+  margin-bottom: 12px;
+  font-style: italic;
+	@include breakpoint(small) {
+    margin-bottom: 24px;
+	}
+}
+
+h4 {
+	font-size: 18px;
+	line-height: 28px;
+}
+
+.content {
+
+}
+
+.content.agenda {
+    p {
+      margin-bottom: 0;
+    }
+    .col-sm-4 {
+      margin-top: 10px;
+      p {
+        font-weight: 700;
+      }
+    }
+  .col-sm-8 {
+    padding-bottom: 10px;
+    border-bottom: 1px solid darken($background-gray,3%);
+    p {
+      margin-left: 15px;
+    }
+  }
+  @include breakpoint(small) {
+    p {
+      margin-bottom: 10px;
+    }
+    .col-sm-4 {
+      margin-top: 0;
+      p {
+        font-weight: 400;
+      }
+    }
+    .col-sm-8 {
+      border-bottom: none;
+      padding-bottom: 0;
+      p {
+        margin-left: 0;
+      }
+    }
+
+  }
+}
+
+

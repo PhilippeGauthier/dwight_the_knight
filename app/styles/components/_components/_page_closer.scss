@@ -1,0 +1,50 @@
+.page-closer {
+	h2 {
+		color: $red;
+	}
+	text-align: center;
+}
+
+.button {
+	 	text-transform: uppercase;
+		color: $navy-blue;
+		font-weight: 700;
+    margin: 15px 5px;
+    display: inline-block;
+    padding: 30px 60px;
+   	background-color: #c0c3c5;
+		line-height: 1.42857143;
+		text-align: center;
+		white-space: nowrap;
+		vertical-align: middle;
+		-ms-touch-action: manipulation;
+		touch-action: manipulation;
+		cursor: pointer;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		background-image: none;
+		transition: all .25s;
+    position: relative;
+    overflow: hidden;
+    font-size: 24px;
+		&:hover, &:focus {
+			color: $navy-blue;
+			background-color: lighten(#c0c3c5, 2%);
+		}
+}
+
+.button div {
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: $background-gray;
+}
+
+.top { top: -10px; }
+.bottom { bottom: -10px; }
+.left { left: -10px; }
+.right { right: -10px; }
