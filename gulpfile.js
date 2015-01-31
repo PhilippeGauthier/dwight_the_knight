@@ -95,7 +95,15 @@ gulp.task('styles', ['styles:components', 'minify']);
 
 // Concatenate Javascript
 gulp.task('scripts', function() {
-  gulp.src(['app/scripts/concatenate/*.js','app/scripts/main.js'])
+  gulp.src([
+    'app/scripts/concatenate/toucheffects-min.js',
+    'app/scripts/concatenate/flickity.pkgd.min.js',
+    'app/scripts/concatenate/jquery.fancybox.pack.js',
+    'app/scripts/concatenate/retina.js',
+    'app/scripts/concatenate/waypoints.min.js',
+    'app/scripts/concatenate/bootstrap.min.js.js',
+    'app/scripts/concatenate/scripts.js',
+    'app/scripts/main.js'])
     .pipe(concat('main.js'))
     .pipe(gulp.dest('statamic/_themes/main/js'));
 });

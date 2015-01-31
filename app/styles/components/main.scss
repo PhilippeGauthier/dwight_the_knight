@@ -6,29 +6,36 @@
 **/
 // Helpers & Frameworks
 
-@import url("http://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,300italic,400italic,600italic");
+@import url("http://fonts.googleapis.com/css?family=Nunito:400,300,700");
+@import url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
 
 // Third Party
 
-@import "../../../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap_custom.scss";
+// @import "../../../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap_custom.scss";
+@import "_third_party/_jquery.fancybox.scss";
+@import "_third_party/_flickity.scss";
+@import "_third_party/_animate.scss";
+@import "_third_party/_styles.scss";
+@import "_third_party/_queries.scss";
+@import "_third_party/_lightbox.scss";
 
 // Main Styles
 
 @import "_utils";
-@import "_global";
+// @import "_global";
 
 
 // Modules
 
-@import "_modules/_nav";
-@import "_modules/_split_text";
-@import "_modules/_quotes";
+// @import "_modules/_nav";
+// @import "_modules/_split_text";
+// @import "_modules/_quotes";
 
 
 // Components
-@import "_components/_typography";
-@import "_components/_page_closer";
-@import "_components/_video";
+// @import "_components/_typography";
+// @import "_components/_page_closer";
+// @import "_components/_video";
 
 // Pages
 
