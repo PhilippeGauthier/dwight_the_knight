@@ -2,7 +2,10 @@
 Features List
 ========================================================================== */
 .features-list {
-    padding: 130px 0
+    padding: 100px 0;
+    * {
+        text-align: center;
+    }
 }
 .features-list h1 {
     margin: 0 0 10px 0;
@@ -18,13 +21,16 @@ Features List
     display: inline-block;
     margin-left: 0;
     width: 65%;
+    .fa {
+        margin-left: 10px;
+    }
 }
 .feature-icon {
-    display: inline-block;
-    margin-right: 25px;
+    display: block;
+    margin: 0 auto 20px;
     width: 90px;
     height: 90px;
-    border: solid 2px #4e9ba3;
+    border: solid 2px $dark-blue;;
     border-radius: 50%;
     vertical-align: top;
     text-align: center;
@@ -32,5 +38,5 @@ Features List
     line-height: 90px;
 }
 .feature-icon i {
-    color: #4e9ba3
+    color: $dark-blue;
 }

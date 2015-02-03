@@ -257,7 +257,7 @@ $(document).ready(function() {
 	$('.wp2').waypoint(function() {
 		$('.wp2').addClass('animated fadeInDown');
 	}, {
-		offset: '75%'
+		offset: '100%'
 	});
 	$('.wp3').waypoint(function() {
 		$('.wp3').addClass('animated bounceInDown');

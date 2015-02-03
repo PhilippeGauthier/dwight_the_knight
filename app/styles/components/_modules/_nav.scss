@@ -19,7 +19,7 @@ Navigation
     width: 35px;
     height: 5px;
     border-radius: 1px;
-    background: #fff;
+    background: $dark-blue;
     cursor: pointer;
 }
 .nav-toggle span:before {
@@ -54,7 +54,8 @@ Navigation
     height: 26px;
 }
 .navicon p {
-    margin: 1px 50px 0 0
+    margin: 1px 50px 0 0;
+    color: $dark-blue;
 }
 .navicon-fixed {
     position: fixed;

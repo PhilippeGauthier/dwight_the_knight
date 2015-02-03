@@ -3799,6 +3799,11 @@ blockquote {
   margin: 0;
 }
 
+/**
+*
+* Utils
+*
+**/
 /* ==========================================================================
 Base
 ========================================================================== */
@@ -4266,13 +4271,13 @@ Buttons
   margin: 0 10px 10px 0;
   padding: 20px 50px;
   border-radius: 3px;
-  background-color: #fff;
-  color: #4b98a9;
+  background-color: #3f5765;
+  color: #fff;
   font-size: 16px;
 }
 
 .use-btn:hover, .use-btn:focus {
-  background-color: #73d0da;
+  background-color: #496575;
   color: #fff;
   text-decoration: none;
 }
@@ -4334,7 +4339,7 @@ Navigation
   width: 35px;
   height: 5px;
   border-radius: 1px;
-  background: #fff;
+  background: #3f5765;
   cursor: pointer;
 }
 
@@ -4377,6 +4382,7 @@ Navigation
 
 .navicon p {
   margin: 1px 50px 0 0;
+  color: #3f5765;
 }
 
 .navicon-fixed {
@@ -4391,17 +4397,18 @@ Hero
 .hero {
   position: relative;
   padding: 60px 0 60px 0;
-  min-height: 800px;
-  background: #284666 url("../img/banner.jpg") no-repeat center center;
+  min-height: 550px;
+  background: #284666 url("../img/background.jpg") no-repeat center center;
   background-size: cover;
   color: #fff;
 }
 
 .hero h1 {
-  margin: 200px 0 45px 0;
+  margin: 100px 0 45px 0;
   font-weight: 500;
   font-size: 45px;
-  text-shadow: 5px 5px 0px rgba(0, 0, 0, 0.2);
+  color: #3f5765;
+  text-shadow: 3px 3px 0px rgba(255, 193, 31, 0.7);
 }
 
 .hero h1 span {
@@ -4417,6 +4424,11 @@ Hero
 .hero {
   width: 100%;
   height: 100%;
+}
+
+.hero .hero-content img {
+  position: absolute;
+  top: 60px;
 }
 
 header i {
@@ -4544,7 +4556,10 @@ Features Slider
 Features List
 ========================================================================== */
 .features-list {
-  padding: 130px 0;
+  padding: 100px 0;
+}
+.features-list * {
+  text-align: center;
 }
 
 .features-list h1 {
@@ -4564,13 +4579,16 @@ Features List
   margin-left: 0;
   width: 65%;
 }
+.feature-content .fa {
+  margin-left: 10px;
+}
 
 .feature-icon {
-  display: inline-block;
-  margin-right: 25px;
+  display: block;
+  margin: 0 auto 20px;
   width: 90px;
   height: 90px;
-  border: solid 2px #4e9ba3;
+  border: solid 2px #3f5765;
   border-radius: 50%;
   vertical-align: top;
   text-align: center;
@@ -4579,7 +4597,7 @@ Features List
 }
 
 .feature-icon i {
-  color: #4e9ba3;
+  color: #3f5765;
 }
 
 /* ==========================================================================
