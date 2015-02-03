@@ -1,0 +1,45 @@
+/* ==========================================================================
+Buttons
+========================================================================== */
+.use-btn {
+    display: inline-block;
+    margin: 0 10px 10px 0;
+    padding: 20px 50px;
+    border-radius: 3px;
+    background-color: #fff;
+    color: #4b98a9;
+    font-size: 16px;
+}
+.use-btn:hover, .use-btn:focus {
+    background-color: #73d0da;
+    color: #fff;
+    text-decoration: none;
+}
+.learn-btn, .download-btn {
+    display: inline-block;
+    padding: 18px 46px;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 16px;
+}
+.learn-btn:hover, .download-btn:hover, .learn-btn:focus, .download-btn:focus {
+    border-color: #73d0da;
+    color: #73d0da;
+    text-decoration: none;
+}
+.read-more-btn {
+    display: inline-block;
+    color: #323a45;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.read-more-btn i, .download-btn i {
+    margin-left: 5px
+}
+.showcase .download-btn {
+    margin-top: 50px
+}
+.download .download-btn {
+    margin-top: 25px
+}

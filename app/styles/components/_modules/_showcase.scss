@@ -1,0 +1,50 @@
+/* ==========================================================================
+Showcase
+========================================================================== */
+.showcase {
+    background: url('../img/showcase-bg-fixed-01.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+.showcase h1 {
+    margin: 0 0 20px 0;
+    color: #fff;
+    font-weight: 400;
+    font-size: 22px;
+}
+.showcase p {
+    margin-bottom: 25px;
+    color: #fff;
+}
+.device {
+    position: absolute;
+    top: -60px;
+    left: 20%;
+    min-height: 676px;
+    width: 359px;
+    background: url('../img/iphone-skeleton.png') no-repeat center center;
+}
+.device-content {
+    position: absolute;
+    top: 115px;
+    left: 56px;
+    width: 247px;
+    height: 445px;
+    background: rgba(0, 0, 0, 0.3);
+}
+.device-content img {
+    width: 247px;
+    height: 445px;
+}
+.showcase-wrap {
+    position: relative;
+    padding: 100px 0;
+    min-height: 600px;
+}
+.showcase-slider ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.showcase-slider .flickity-page-dots {
+    bottom: 20px;
+}

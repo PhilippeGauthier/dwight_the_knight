@@ -1,0 +1,8 @@
+<form action="../">
+<select class="form-control" onchange="window.open(this.options[this.selectedIndex].value,'_top')">
+		<option value="">Choose a destination...</option>
+   {{ nav from="/" }}
+		<option value="{{ url }}">{{ title }}</option>
+   {{ /nav }}
+</form>
+

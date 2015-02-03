@@ -1,70 +1,29 @@
-
-.video {
-	position: relative;
-	padding: 0;
-	margin: 20px 0;
-	&:hover, &:focus {
-		cursor: pointer;
-	}
-	h2 {
-		z-index: 2;
-	}
-	display: none;
-	@include breakpoint(small) {
-		display: block;
-	}
+/* ==========================================================================
+Video
+========================================================================== */
+section.video i {
+    margin-right: 10px;
+    color: #323a45;
+    vertical-align: middle;
+    font-size: 50px;
+    -webkit-transition: color 300ms ease-in-out;
+    transition: color 300ms ease-in-out;
 }
-// .video h2 {
-// 	@include vertical-align;
-// }
-
-.video video {
-    position:relative;
-    width: 100%;
-    z-index:0;
+section.video h1 {
+    font-weight: 400;
+    font-size: 20px;
 }
-.video .overlay {
-    position:absolute;
-    top:0;
-    bottom: 0;
-    left:0;
-    right: 0;
-    z-index:1;
-  	display: flex;
-  	flex-direction: column;
-  	align-items: center;
-  	justify-content: center;
-  	align-content: center;
-  	text-align: center;
-  	transition: all 0.5s;
-
-    &.mask {
-    	background-color: rgba(black,.4);
-    }
+section.video {
+    padding: 60px 0;
+    background-color: #f6f7f9;
 }
-
-#controls h1 {
-	color: white;
-	margin-top: 10px;
+section.video a {
+    color: #323a45
 }
-
-#vidpause {
-	
-	.mask {
-		
-	}
-	height: 99%;
-	width: 100%;
-
+section.video a:hover, section.video a:focus {
+    color: #73d0da;
+    text-decoration: none;
 }
-
-#square {
-	height: 100px;
-	width: 100px;
-	background-size: contain;
-	margin-bottom: 20px;
-	background-image: url("../../../assets/img/play.png");
-	z-index: 2;
-	margin: 0 auto;
-
+section.video a:hover i, section.video a:focus i {
+    color: #73d0da
 }

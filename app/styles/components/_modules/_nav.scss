@@ -1,71 +1,63 @@
-
-.navbar {
-	border-top: 2px solid $navy-blue;
-	border-bottom: 2px solid $navy-blue;
-	border-radius: 0;
+/* ==========================================================================
+Navigation
+========================================================================== */
+.nav-toggle {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    z-index: 999999;
+    padding: 10px 35px 16px 0px;
+    cursor: pointer;
 }
-
-.navbar-collapse {
-	@include breakpoint(small) {
-		padding-left: 0;
-		padding-right: 0;
-	}
+.nav-toggle:focus {
+    outline: none;
 }
-
-.navbar-toggle .icon-bar {
-	background-color: $red;
+.nav-toggle span, .nav-toggle span:before, .nav-toggle span:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 35px;
+    height: 5px;
+    border-radius: 1px;
+    background: #fff;
+    cursor: pointer;
 }
-
-.nav.navbar-nav {
-	display: flex;
-	width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-	flex-flow: column wrap;
-	li {
-		margin-bottom: 0;
-	}
-	a {
-		margin-bottom: 0;
-		color: $navy-blue;
-		padding-left: 0;
-		padding-right: 0;
-		transition: all .15s;
-		&:hover, &:focus, &:active {
-			color: $red;
-		}
-		&.on {
-			color: $red;
-		}
-	}
-
-	@include breakpoint(small) {
-		flex-flow: row nowrap;
-		a {
-			padding-top: 30px;
-			padding-bottom: 30px;
-		}
-	}
+.nav-toggle span:before {
+    top: -10px
 }
-
-.navbar .container {
-	padding-top: 0;
-	padding-bottom: 0;
+.nav-toggle span:after {
+    bottom: -10px
 }
-
-.navbar-brand {
-	margin-bottom: 0;	
-	color: $navy-blue;
-		&:hover, &:focus, &:active {
-			color: $navy-blue;
-		}
-	@include breakpoint(small) {
-		display: none;
-	}
+.nav-toggle span, .nav-toggle span:before, .nav-toggle span:after {
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
 }
-
-.nav:after, .nav:before, .navbar-collapse:after, .navbar-collapse:before, .navbar-header:after, .navbar-header:before, .navbar:after, .navbar:before,  {
-display: table;
-content: none;
+.nav-toggle.active span {
+    background-color: transparent
+}
+.nav-toggle.active span:before, .nav-toggle.active span:after {
+    top: 0
+}
+.nav-toggle.active span:before {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.nav-toggle.active span:after {
+    top: 10px;
+    -webkit-transform: translateY(-10px) rotate(-45deg);
+    -ms-transform: translateY(-10px) rotate(-45deg);
+    transform: translateY(-10px) rotate(-45deg);
+}
+.navicon {
+    position: relative;
+    height: 26px;
+}
+.navicon p {
+    margin: 1px 50px 0 0
+}
+.navicon-fixed {
+    position: fixed;
+    top: 59px;
+    right: 143px;
 }

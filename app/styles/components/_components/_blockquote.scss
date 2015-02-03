@@ -1,0 +1,27 @@
+/* ==========================================================================
+Blockquote
+========================================================================== */
+blockquote {
+    margin: 40px 0 0;
+    padding: 0;
+    border: none;
+}
+blockquote p {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 70%;
+    vertical-align: top;
+    font-style: italic;
+}
+blockquote .avatar {
+    display: inline-block;
+    margin-right: 20px;
+    width: 64px;
+    height: 64px;
+    vertical-align: middle;
+}
+blockquote .logo-quote {
+    display: inline-block;
+    margin: 0 0 0 90px;
+}
