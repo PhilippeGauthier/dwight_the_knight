@@ -6,7 +6,7 @@ Showcase
     background-size: cover;
 }
 .showcase h1 {
-    margin: 0 0 20px 0;
+    margin: 100px 0 20px 0;
     color: #fff;
     font-weight: 400;
     font-size: 22px;
@@ -17,11 +17,11 @@ Showcase
 }
 .device {
     position: absolute;
-    top: -60px;
+    top: -110px;
     left: 20%;
     min-height: 676px;
     width: 359px;
-    background: url('../img/iphone-skeleton.png') no-repeat center center;
+    // background: url('../img/iphone-skeleton.png') no-repeat center center;
 }
 .device-content {
     position: absolute;

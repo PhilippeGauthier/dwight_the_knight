@@ -4404,7 +4404,7 @@ Hero
 }
 
 .hero h1 {
-  margin: 100px 0 45px 0;
+  margin: 130px 0 45px 0;
   font-weight: 500;
   font-size: 45px;
   color: #3f5765;
@@ -4640,7 +4640,7 @@ Showcase
 }
 
 .showcase h1 {
-  margin: 0 0 20px 0;
+  margin: 100px 0 20px 0;
   color: #fff;
   font-weight: 400;
   font-size: 22px;
@@ -4653,11 +4653,10 @@ Showcase
 
 .device {
   position: absolute;
-  top: -60px;
+  top: -110px;
   left: 20%;
   min-height: 676px;
   width: 359px;
-  background: url("../img/iphone-skeleton.png") no-repeat center center;
 }
 
 .device-content {
@@ -4826,12 +4825,14 @@ Download Now
 Footer
 ========================================================================== */
 footer {
-  padding: 100px 0;
+  padding: 50px 0;
 }
 
 footer p {
   color: #c7cacc;
   font-size: 12px;
+  display: inline-block;
+  line-height: 18px;
 }
 
 footer ul {
@@ -4839,19 +4840,45 @@ footer ul {
 }
 
 footer li {
-  float: left;
-  margin-right: 15%;
+  margin-bottom: 10px;
   list-style: none;
-  text-transform: uppercase;
-  font-weight: 400;
 }
 
 footer li a {
   color: #3f6184;
+  display: block;
 }
 
 footer li:last-child {
   margin-right: 0;
+}
+
+.footer-icon {
+  display: inline-block;
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  border: solid 2px #c7cacc;
+  color: #c7cacc;
+  border-radius: 50%;
+  vertical-align: top;
+  text-align: center;
+  font-size: 13px;
+  line-height: 30px;
+  float: left;
+}
+
+.footer-content {
+  display: inline-block;
+  margin-left: 0;
+  width: 80%;
+}
+.footer-content p {
+  margin-top: 0;
+}
+
+footer label {
+  color: #c7cacc;
 }
 
 /* ==========================================================================
