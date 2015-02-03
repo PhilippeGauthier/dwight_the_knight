@@ -314,20 +314,39 @@ $(document).ready(function() {
 /* When user clicks the Icon */
 $(".nav-toggle").click(function() {
 	$(this).toggleClass("active");
-	$(".overlay-boxify").toggleClass("open");
+	$("#main").toggleClass("open");
 });
 
 /* When user clicks a link */
-$(".overlay ul li a").click(function() {
+$("#main ul li a").click(function() {
 	$(".nav-toggle").toggleClass("active");
-	$(".overlay-boxify").toggleClass("open");
+	$("#main").toggleClass("open");
 });
 
 /* When user clicks outside */
-$(".overlay").click(function() {
+$("#main").click(function() {
 	$(".nav-toggle").toggleClass("active");
-	$(".overlay-boxify").toggleClass("open");
+	$("#main").toggleClass("open");
 });
+
+
+/***************** Insurance Transformicon ******************/
+
+/* When user clicks the Icon */
+$(".insurance-toggle").click(function() {
+	$("#insurance").toggleClass("open");
+});
+
+/* When user clicks a link */
+$("#insurance ul li a").click(function() {
+	$("#insurance").toggleClass("open");
+});
+
+/* When user clicks outside */
+$("#insurance").click(function() {
+	$("#insurance").toggleClass("open");
+});
+
 
 /***************** Smooth Scrolling ******************/
 

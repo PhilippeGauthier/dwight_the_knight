@@ -36,7 +36,8 @@ Navigation
     background-color: transparent
 }
 .nav-toggle.active span:before, .nav-toggle.active span:after {
-    top: 0
+    top: 0;
+    background-color: #FFF;
 }
 .nav-toggle.active span:before {
     -webkit-transform: rotate(45deg);

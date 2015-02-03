@@ -4362,6 +4362,7 @@ Navigation
 
 .nav-toggle.active span:before, .nav-toggle.active span:after {
   top: 0;
+  background-color: #FFF;
 }
 
 .nav-toggle.active span:before {
