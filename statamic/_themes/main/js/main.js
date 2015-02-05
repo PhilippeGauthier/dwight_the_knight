@@ -334,6 +334,7 @@ $("#main").click(function() {
 
 /* When user clicks the Icon */
 $(".insurance-toggle").click(function() {
+	event.preventDefault();
 	$("#insurance").toggleClass("open");
 });
 

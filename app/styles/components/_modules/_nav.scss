@@ -53,7 +53,16 @@ Navigation
 .navicon {
     position: relative;
     height: 26px;
+    &.white {
+        p {
+            color: white;
+        }
+        .nav-toggle span, .nav-toggle span:before, .nav-toggle span:after {
+            background: white;
+        }
+    }
 }
+
 .navicon p {
     margin: 1px 50px 0 0;
     color: $dark-blue;

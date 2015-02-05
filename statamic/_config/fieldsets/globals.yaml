@@ -10,8 +10,8 @@ fields:
     type: file
     allowed: [png, jpg, gif]
     destination: assets/img/
-  test:
+  phone_number:
     type: text
-    display: test
+    display: Phone Number
 
   # add your fields here...

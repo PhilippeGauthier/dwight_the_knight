@@ -58,8 +58,8 @@ Nav Overlay
     transition: all 300ms ease-in-out;
 }
 .overlay ul li a:hover, .overlay ul li a:focus {
-    border-color: #73d0da;
-    color: #73d0da;
+    border-color: $yellow;
+    color: $yellow;
 }
 
 /* Effects */

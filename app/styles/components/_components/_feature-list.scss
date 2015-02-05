@@ -26,6 +26,9 @@ Features List
     }
 }
 .feature-icon {
+    a {
+        display: block;
+    }
     display: block;
     margin: 0 auto 20px;
     width: 90px;

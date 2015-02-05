@@ -122,3 +122,13 @@ textarea {
     overflow: auto; /* 1 */
     vertical-align: top; /* 2 */
 }
+
+.form-container {
+    border-radius: 10px;
+    background-color: rgba(white,.2);
+    padding: 20px;
+    input {
+        max-width: 300px;
+    }
+}
+

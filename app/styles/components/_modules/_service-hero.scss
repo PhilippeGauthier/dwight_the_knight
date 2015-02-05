@@ -5,9 +5,23 @@ Hero
     position: relative;
     padding: 60px 0 60px 0;
     min-height: 550px;
-    background:  url('../img/background.jpg') no-repeat center center;
+    background: rgb(40, 70, 102) url('../img/background.jpg') no-repeat center center;
     background-size: cover;
     color: #fff;
+}
+
+.hero.service {
+    height: 820px;
+    h1 {
+        text-align: center;
+        margin: 45px 0 45px;
+        color: white;
+        text-shadow: none;
+    }
+    .phone {
+        font-size: 48px;
+        margin: 20px 0;
+    }
 }
 .hero h1 {
     margin: 130px 0 45px 0;
@@ -15,6 +29,7 @@ Hero
     font-size: 45px;
     color: $dark-blue;
     text-shadow: 3px 3px 0px rgba($yellow, 0.7);
+    text-transform: uppercase;
 }
 .hero h1 span {
     display: inline-block;
