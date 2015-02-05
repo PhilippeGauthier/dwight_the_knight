@@ -5,7 +5,7 @@ Hero
     position: relative;
     padding: 60px 0 60px 0;
     min-height: 550px;
-    background: rgb(40, 70, 102) url('../img/background.jpg') no-repeat center center;
+    background:  url('../img/background.jpg') no-repeat center center;
     background-size: cover;
     color: #fff;
 }
@@ -44,10 +44,6 @@ Hero
     height: 100%;
 }
 
-.hero .hero-content img {
-    position: absolute;
-    top: 60px;
-}
 header i {
     margin-left: 5px
 }
