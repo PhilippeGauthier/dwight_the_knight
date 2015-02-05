@@ -181,6 +181,7 @@ _admin_nav:
   view_site: true
   logout:    true
   globals:   true
+  raven:     true
 
 # When you log in, where would you like to start?
 _admin_start_page: pages
