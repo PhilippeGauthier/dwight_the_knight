@@ -54,7 +54,7 @@ messages:
 
 # Configure notification email
 email:
-  to: pgauthier@gmail.com
+  to: travismarble@gmail.com
   from: admin@dwighttheknight.com
   subject: Auto Insurance Lead // Dwight The Knight
   automagic: true
