@@ -117,3 +117,79 @@ $('a[href*=#]:not([href=#])').click(function() {
 		}
 	}
 });
+
+/***************** Form Validation ******************/
+
+$(document).ready(function() {
+    $('#tax_debt').formValidation({
+        framework: 'bootstrap',
+        icon: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+            First_Name: {
+                validators: {
+                    notEmpty: {
+                        message: 'The first name is required'
+                    }
+                }
+            },
+            Last_Name: {
+                validators: {
+                    notEmpty: {
+                        message: 'The last name is required'
+                    }
+                }
+            },
+            Middle_Name: {
+                validators: {
+                    notEmpty: {
+                        message: 'The last name is required'
+                    }
+                }
+            },
+            Email_Address: {
+                validators: {
+                    notEmpty: {
+                        message: 'The email address is required'
+                    },
+                    emailAddress: {
+                        message: 'The input is not a valid email address'
+                    }
+                }
+            },
+            Zip_Code: {
+                validators: {
+                    notEmpty: {
+                        message: 'The Zip Code is Required'
+                    },
+                    numeric: {
+                        message: 'Can only contain numbers'
+                    }
+                }
+            },
+            Phone_Number: {
+                validators: {
+                    notEmpty: {
+                        message: 'The Phone Number is Required'
+                    },
+                    numeric: {
+                        message: 'Can only contain numbers'
+                    }
+                }
+            },
+            button: {
+                // The submit buttons selector
+                selector: '[type="submit"]',
+
+                // The disabled class
+                disabled: 'disabled'
+            }
+        },
+    });
+});
+
+
+

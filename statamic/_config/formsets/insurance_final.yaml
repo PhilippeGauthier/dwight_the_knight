@@ -1,0 +1,76 @@
+###########################################################################################
+#
+#  EXAMPLE RAVEN FORMSET
+#
+#  Formsets can override any default settings (raven.yaml) EXCEPT master_killswitch
+#
+###########################################################################################
+
+# Location (from root) to save form submissions
+submission_save_path: _forms/_insurance_final/
+
+# Fields allowed to be submitted in the form, automatically
+# purging anything and everything else
+allowed:
+  - First_Name
+  - Last_Name
+  - Phone_Number
+  - Email_Address
+  - Zip_Code
+
+# You are not required to require fields, but once you do, any missing
+# from the POST will squash this submission and send a list of
+# missing fields to your {{ raven:errors }} tagpair
+required:
+  - First_Name
+  - Last_Name
+  - Phone_Number
+  - Email_Address
+  - Zip_Code
+
+submission_save_extension: yaml
+
+# Apply validation rules to specific fields. Refer to documentation
+# for a full list of available rules and their format
+validate:
+  First_Name: alpha
+  Last_Name: alpha
+  Phone_Number: int
+  Zip_Code: int
+
+# Error messages can be mapped to your fields and passed to the
+# template upon failure. They will be available here:
+#
+# {{ raven:error }}
+#     {{ invalid }}
+#         {{ field }} : {{ message }}
+#     {{ /invalid }}
+# {{ /raven:error }}
+#
+messages:
+  First_Name: "Must be made of letters. Who First_Named you?"
+  Phone_Number: "That's not a Phone_Number. Are you from the past?"
+  Zip_Code: "That needs to be a number"
+
+# Configure notification email
+email:
+  to: pgauthier@gmail.com
+  from: admin@dwighttheknight.com
+  subject: Final Expense Lead // Dwight The Knight
+  automagic: true
+  # html_template: html_email
+  # text_template: text_email
+
+datestamp_format: "m/d/Y"
+
+control_panel:
+  fields:
+    - First_Name
+    - Phone_Number
+    - Email_Address
+    - Zip_Code
+  metrics:
+    - 
+      type: count
+      field: First_Name
+      label: Total Forms Submitted

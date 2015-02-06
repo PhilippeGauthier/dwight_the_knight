@@ -124,11 +124,13 @@ textarea {
 }
 
 .form-container {
+    position: relative;
     border-radius: 10px;
-    background-color: rgba(white,.2);
-    padding: 20px;
-    input {
-        max-width: 300px;
+    background-color: rgba(white,.3);
+    padding: 35px 20px 20px;
+    label {
+        font-size: 18px;
     }
+    margin-bottom: 60px;
 }
 
