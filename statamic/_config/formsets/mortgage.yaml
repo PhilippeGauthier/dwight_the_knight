@@ -66,6 +66,7 @@ datestamp_format: "m/d/Y"
 control_panel:
   fields:
     - First_Name
+    - Last_Name
     - Phone_Number
     - Email_Address
     - Zip_Code
