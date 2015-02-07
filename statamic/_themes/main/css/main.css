@@ -4255,7 +4255,7 @@ Hero
 }
 
 .hero h2 {
-  font-size: 18px;
+  font-size: 24px;
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
   /* Landscape phone to portrait tablet */
 }
@@ -4287,7 +4287,7 @@ Hero
 .hero .hero-content img {
   margin: 0 auto;
   text-align: center;
-  max-height: 100px;
+  max-height: 180px;
   /* Landscape phone to portrait tablet */
 }
 @media (min-width: 767px) {
