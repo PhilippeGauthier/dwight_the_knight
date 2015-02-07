@@ -4267,6 +4267,9 @@ Hero
 .hero span.phone {
   /* Landscape phone to portrait tablet */
 }
+.hero span.phone a {
+  color: #3f5765;
+}
 @media (min-width: 767px) {
   .hero span.phone {
     color: #3f5765;

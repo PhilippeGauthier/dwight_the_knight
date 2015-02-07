@@ -58,6 +58,9 @@ Hero
 }
 
 .hero span.phone {
+    a {
+        color: $dark-blue;
+    }
     @include breakpoint(small) {
         color: $dark-blue;
         letter-spacing: .02em;
