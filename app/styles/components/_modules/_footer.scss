@@ -2,10 +2,7 @@
 Footer
 ========================================================================== */
 footer {
-    padding: 20px 0;
-    @include breakpoint(small) {
-        padding: 50px 0;
-    }
+    padding-bottom: 20px;
 }
 footer p {
     color: #c7cacc;

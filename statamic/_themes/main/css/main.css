@@ -4238,6 +4238,16 @@ Hero
   color: #3f5765;
 }
 
+.hero h1 {
+  /* Landscape phone to portrait tablet */
+}
+@media (min-width: 767px) {
+  .hero h1 {
+    margin: 80px 0 45px 0;
+    font-size: 45px;
+  }
+}
+
 .hero h1 span {
   display: inline-block;
   color: #a1a9b0;
@@ -4297,7 +4307,7 @@ header i {
 }
 @media (min-width: 767px) {
   .hero.service h1 {
-    margin: 130px 0 45px 0;
+    margin: 80px 0 45px 0;
     font-size: 45px;
   }
 }
@@ -4443,7 +4453,7 @@ Features Slider
 Features List
 ========================================================================== */
 .features-list {
-  padding: 30px 0;
+  padding: 50px 0 30px;
   /* Landscape phone to portrait tablet */
 }
 .features-list * {
@@ -4750,13 +4760,7 @@ Download Now
 Footer
 ========================================================================== */
 footer {
-  padding: 20px 0;
-  /* Landscape phone to portrait tablet */
-}
-@media (min-width: 767px) {
-  footer {
-    padding: 50px 0;
-  }
+  padding-bottom: 20px;
 }
 
 footer p {
