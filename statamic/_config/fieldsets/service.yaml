@@ -15,9 +15,9 @@ fields:
     allowed: [png, jpg, gif]
     destination: assets/img/
 
-  headline:
+  phone_number:
+    display: Phone Number
     type: text
-    display: Page Headline
 
   summary:
     display: Landing Page summary
@@ -26,4 +26,5 @@ fields:
   details:
     display: Service Details (optional)
     type: redactor
+
 

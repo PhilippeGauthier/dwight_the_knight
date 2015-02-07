@@ -2,7 +2,10 @@
 Footer
 ========================================================================== */
 footer {
-    padding: 50px 0
+    padding: 20px 0;
+    @include breakpoint(small) {
+        padding: 50px 0;
+    }
 }
 footer p {
     color: #c7cacc;
@@ -24,6 +27,23 @@ footer li a {
 }
 footer li:last-child {
     margin-right: 0
+}
+
+footer li:hover {
+    transition: .25s all;
+    .footer-icon, p {
+        color: $dark-blue;
+    }
+    .footer-icon {
+        border: 2px solid $dark-blue;
+    }
+}
+
+.footer-logo {
+    display: none;
+    @include breakpoint(small) {
+        display: block;
+    }
 }
 
 .footer-icon {

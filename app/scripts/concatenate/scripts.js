@@ -25,18 +25,18 @@ $(document).ready(function() {
 
 	/***************** Flickity ******************/
 
-	$('#featuresSlider').flickity({
-		cellAlign: 'left',
-		contain: true,
-		prevNextButtons: false
-	});
+	// $('#featuresSlider').flickity({
+	// 	cellAlign: 'left',
+	// 	contain: true,
+	// 	prevNextButtons: false
+	// });
 
-	$('#showcaseSlider').flickity({
-		cellAlign: 'left',
-		contain: true,
-		prevNextButtons: false,
-		imagesLoaded: true
-	});
+	// $('#showcaseSlider').flickity({
+	// 	cellAlign: 'left',
+	// 	contain: true,
+	// 	prevNextButtons: false,
+	// 	imagesLoaded: true
+	// });
 
 	/***************** Fancybox ******************/
 
@@ -121,15 +121,17 @@ $('a[href*=#]:not([href=#])').click(function() {
 /***************** Form Validation ******************/
 
 $(document).ready(function() {
-    $('#tax_debt').formValidation({
+    $('#dwight_form').formValidation({
         framework: 'bootstrap',
         icon: {
             valid: 'glyphicon glyphicon-ok',
             invalid: 'glyphicon glyphicon-remove',
             validating: 'glyphicon glyphicon-refresh'
         },
+        live: false,
         fields: {
             First_Name: {
+                trigger: 'blur',
                 validators: {
                     notEmpty: {
                         message: 'The first name is required'
@@ -137,6 +139,7 @@ $(document).ready(function() {
                 }
             },
             Last_Name: {
+                trigger: 'blur',
                 validators: {
                     notEmpty: {
                         message: 'The last name is required'
@@ -144,6 +147,7 @@ $(document).ready(function() {
                 }
             },
             Middle_Name: {
+                trigger: 'blur',
                 validators: {
                     notEmpty: {
                         message: 'The last name is required'
@@ -151,6 +155,7 @@ $(document).ready(function() {
                 }
             },
             Email_Address: {
+                trigger: 'blur',
                 validators: {
                     notEmpty: {
                         message: 'The email address is required'
@@ -161,6 +166,7 @@ $(document).ready(function() {
                 }
             },
             Zip_Code: {
+                trigger: 'blur',
                 validators: {
                     notEmpty: {
                         message: 'The Zip Code is Required'
@@ -171,6 +177,7 @@ $(document).ready(function() {
                 }
             },
             Phone_Number: {
+                trigger: 'blur',
                 validators: {
                     notEmpty: {
                         message: 'The Phone Number is Required'

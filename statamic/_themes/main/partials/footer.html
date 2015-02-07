@@ -5,7 +5,7 @@
             <h1 class="footer-logo">
             <img src="{{ path src="_themes/main/img/logo_blue.png" }}" alt="Footer Logo Blue">
             </h1>
-            <p><a href="http://cillamar">© Cillamar 2015</a></p>
+            <p>&copy; {{ current_date format="Y"}}<a href="http://cillamar.com"> Cillamar</a>. All Rights Reserved.</p>
           </div>
           <div class="col-md-3">
             <h3>About</h3>
@@ -25,14 +25,6 @@
                 </a>
               </li>
               <li>      
-                <div class="footer-icon">
-                  <i class="fa fa-phone"></i>
-                </div>
-                <div class="footer-content">
-                  <p>800-123-4567</p>
-                </div>
-              </li>
-              <li>      
                 <a href="mail_to:admin@dwighttheknight.com">
                   <div class="footer-icon">
                     <i class="fa fa-map-marker"></i>
@@ -45,23 +37,37 @@
             </ul>
           </div>
           <div class="col-md-3">
-            <h3>Get in Touch</h3>
-            <form>
-              <div class="form-group">
-                <label for="exampleInputPassword1">Name</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Name">
-              </div>
-              <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-              </div>
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox">Join the Mailing
-                </label>
-              </div>
-              <button type="submit" class="btn btn-default">Submit</button>
-            </form>
+            <h3>Engage With Us</h3>
+              <li>      
+                <a href="{{ globals:linkedin }}">
+                  <div class="footer-icon">
+                    <i class="fa fa-linkedin"></i>
+                  </div>
+                  <div class="footer-content">
+                    <p>LinkedIn</p>
+                  </div>
+                </a>
+              </li>
+              <li>      
+                <a href="{{ globals:facebook }}">
+                  <div class="footer-icon">
+                    <i class="fa fa-facebook"></i>
+                  </div>
+                  <div class="footer-content">
+                    <p>facebook</p>
+                  </div>
+                </a>
+              </li>
+              <li>      
+                <a href="{{ globals:twitter }}">
+                  <div class="footer-icon">
+                    <i class="fa fa-twitter"></i>
+                  </div>
+                  <div class="footer-content">
+                    <p>Twitter</p>
+                  </div>
+                </a>
+              </li>
           </div>
         </div>
       </div>

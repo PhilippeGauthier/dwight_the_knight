@@ -4,7 +4,7 @@
     <div class="container">
       <div class="row nav-wrapper">
         <div class="col-md-6 col-sm-6 col-xs-6 text-left">
-          <a href="{{ _site_root }}"><img src="{{ path src="_themes/main/img/logo.png" }}" alt="Dwight The Knight Logo"></a>
+          <a class="logo" href="{{ _site_root }}"><img src="{{ path src="_themes/main/img/logo.png" }}" alt="Dwight The Knight Logo"></a>
         </div>
         <div class="col-md-6 col-sm-6 col-xs-6 text-right navicon white">
           <p>MENU</p><a id="trigger-overlay" class="nav_slide_button nav-toggle" href="#"><span></span></a>
@@ -19,11 +19,11 @@
         <div class="row">
           <div class="col-md-6">
             <h2>Call us at:</h2>
-            <h2 class="phone">{{ globals:phone_number }}</h2>
+            <h2 class="phone">{{ phone_number }}</h2>
             <p>{{ details }}</p>
           </div>
           <div class="col-md-6">
-            <h2>Or Let Us Call You:</h2>
+            <h2>Let Us Call You:</h2>
             <div class="form-container">
 
             {{ theme:partial src="form_insurance_final" }}

@@ -127,10 +127,15 @@ textarea {
     position: relative;
     border-radius: 10px;
     background-color: rgba(white,.3);
+    margin-top: 20px;
     padding: 35px 20px 20px;
     label {
         font-size: 18px;
     }
     margin-bottom: 60px;
+}
+
+small {
+    display: none;
 }
 

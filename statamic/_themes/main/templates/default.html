@@ -1,10 +1,10 @@
 <header>
-      <section class="hero">
+      <section class="hero landing">
         <div class="texture-overlay"></div>
         <div class="container">
           <div class="row nav-wrapper">
             <div class="col-md-6 col-sm-6 col-xs-6 text-left">
-              <a href="{{ _site_root }}"><img src="{{ path src="_themes/main/img/logo_blue.png" }}" alt="Dwight The Knight Logo"></a>
+              <a class="logo" href="{{ _site_root }}"><img src="{{ path src="_themes/main/img/logo_blue.png" }}" alt="Dwight The Knight Logo"></a>
             </div>
             <div class="col-md-6 col-sm-6 col-xs-6 text-right navicon">
               <p>MENU</p><a id="trigger-overlay" class="nav_slide_button nav-toggle" href="#"><span></span></a>
@@ -13,8 +13,9 @@
           <div class="row hero-content">
             <div class="col-md-8">
               <h1>YOUR FINANCIAL KNIGHT IN SHINING ARMOR</h1>
+              <h2>Call us at <span class="phone">{{ globals:phone_number }}</span></h2>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 figure">
               <img src="_themes/main/img/dwight_down.png" alt="Dwight The Knight">
             </div>
           </div>
@@ -25,15 +26,7 @@
 
     {{ theme:partial src="feature-list" }}
 
-    <section class="video" id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <h1><a href="http://www.youtube.com/embed/OifvTaAQ678?autoplay=1&wmode=opaque&fs=1" class="youtube-media"><i class="fa fa-play-circle-o"></i> Watch the Video</a></h1>
-          </div>
-        </div>
-      </div>
-    </section>
+
     <section class="showcase">
       <div class="showcase-wrap">
         <div class="texture-overlay"></div>
@@ -49,6 +42,16 @@
               <p>Dwight The Knight is where everyday consumers come to save money and ultimately empower their own financial freedom.</p>
               <p>Our national network of lenders, agents and service providers simplifies the tedious process of financial decision-making by offering free, no-obligation consultations and quotes that enable individuals to make the best decisions regarding their financial future.</p>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="video" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h1><a href="http://www.youtube.com/embed/OifvTaAQ678?autoplay=1&wmode=opaque&fs=1" class="youtube-media"><i class="fa fa-play-circle-o"></i> Watch the Video</a></h1>
           </div>
         </div>
       </div>

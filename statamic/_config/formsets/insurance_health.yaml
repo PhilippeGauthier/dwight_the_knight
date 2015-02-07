@@ -54,7 +54,7 @@ messages:
 
 # Configure notification email
 email:
-  to: travismarble@gmail.com
+  to: travis@knightlinelegal.com
   from: admin@dwighttheknight.com
   subject: Health Insurance Lead // Dwight The Knight
   automagic: true

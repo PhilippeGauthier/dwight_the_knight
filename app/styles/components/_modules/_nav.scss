@@ -60,15 +60,24 @@ Navigation
         .nav-toggle span, .nav-toggle span:before, .nav-toggle span:after {
             background: white;
         }
+        .nav-toggle.active span {
+            background: transparent;
+        }
     }
 }
 
 .navicon p {
     margin: 1px 50px 0 0;
     color: $dark-blue;
+    display: none;
+    @include breakpoint(small) {
+        display: inline-block;
+    }
 }
 .navicon-fixed {
     position: fixed;
     top: 59px;
     right: 143px;
 }
+
+

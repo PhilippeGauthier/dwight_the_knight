@@ -6,7 +6,7 @@
 **/
 // Helpers & Frameworks
 
-@import url("http://fonts.googleapis.com/css?family=Nunito:400,300,700");
+// @import url("http://fonts.googleapis.com/css?family=Nunito:400,300,700");
 @import url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
 
 // Third Party
@@ -14,18 +14,18 @@
 // @import "../../../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap_custom.scss";
 @import "_third_party/_formValidation.scss";
 @import "_third_party/_jquery.fancybox.scss";
-@import "_third_party/_flickity.scss";
+// @import "_third_party/_flickity.scss";
 @import "_third_party/_animate.scss";
 @import "_third_party/_styles.scss";
 @import "_third_party/_queries.scss";
-@import "_third_party/_lightbox.scss";
+// @import "_third_party/_lightbox.scss";
 
 // Main Styles
 
 @import "_normalize";
 @import "_utils";
 @import "_base";
-
+@import "_global";
 
 @import "_components/_links";
 @import "_components/_typography";
@@ -34,11 +34,10 @@
 @import "_components/_figures";
 @import "_modules/_forms";
 @import "_modules/_tables";
-@import "_global";
+
 @import "_components/_buttons";
 @import "_modules/_nav";
 @import "_modules/_hero";
-@import "_modules/_service-hero";
 @import "_components/_video";
 @import "_components/_slider";
 @import "_components/_feature-list";

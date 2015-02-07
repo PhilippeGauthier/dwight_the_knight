@@ -100,22 +100,24 @@ gulp.task('scripts', function() {
     'app/scripts/concatenate/formValidation.js',
     'app/scripts/concatenate/bootstrapFormValidation.js',
     'app/scripts/concatenate/toucheffects-min.js',
-    'app/scripts/concatenate/flickity.pkgd.min.js',
+    // 'app/scripts/concatenate/flickity.pkgd.min.js',
     'app/scripts/concatenate/jquery.fancybox.pack.js',
     'app/scripts/concatenate/retina.js',
     'app/scripts/concatenate/waypoints.min.js',
     'app/scripts/concatenate/scripts.js',
     'app/scripts/main.js'])
     .pipe(concat('main.js'))
+    .pipe(uglify())
+    .pipe(rename('main.min.js'))
     .pipe(gulp.dest('statamic/_themes/main/js'));
 });
 
 // Minify Javascript
 
 gulp.task('compress', function() {
-  gulp.src('statamic/_themes/main/js/*.js')
+  gulp.src('statamic/_themes/main/js/main.js')
     .pipe(uglify())
-    .pipe(gulp.dest('statamic/_themes/main/js'))
+    .pipe(gulp.dest('statamic/_themes/main/js'));
 });
 
 gulp.task('scripts_non_cat', function() {

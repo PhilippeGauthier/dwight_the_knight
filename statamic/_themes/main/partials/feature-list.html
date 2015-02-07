@@ -13,6 +13,7 @@
 
             <h1>{{ title }}</h1>
             <p>{{ summary }}</p>
+            <a href="{{ url }}" class="use-btn">Get Started<i class="fa fa-chevron-circle-right"></i></a>
           </div>
           {{ /nav }}
         </div>
@@ -27,6 +28,7 @@
 
             <h1>{{ title }}</h1>
             <p>{{ summary }}</p>
+            <a href="#" class="use-btn insurance-toggle">Get Started<i class="fa fa-chevron-circle-right"></i></a>
           </div>
           {{ /nav }}
         </div>
@@ -41,29 +43,6 @@
       
             <h1>{{ title }}</h1>
             <p>{{ summary }}</p>
-          </div>
-        {{ /nav }}
-        </div>
-      </div>
-    </div>
-    <!-- Separate links to maintain even horizontal height on buttons -->
-    <div class="row">
-      <div class="col-md-12">
-        <div class="col-md-4 feature-1 wp2">
-          {{ nav from="/" exclude="insurance|mortgage" }}
-          <div class="feature-content">
-            <a href="{{ url }}" class="use-btn">Get Started<i class="fa fa-chevron-circle-right"></i></a>
-          </div>
-          {{ /nav }}
-        </div>
-        <div class="col-md-4 feature-2 wp2 delay-05s">
-          <div class="feature-content">
-            <a href="#" class="use-btn insurance-toggle">Get Started<i class="fa fa-chevron-circle-right"></i></a>
-          </div>
-        </div>
-        <div class="col-md-4 feature-3 wp2 delay-1s">
-        {{ nav from="/" exclude="insurance|tax_debt" }}
-          <div class="feature-content">
             <a href="{{ url }}" class="use-btn">Get Started<i class="fa fa-chevron-circle-right"></i></a>
           </div>
         {{ /nav }}

@@ -13,5 +13,15 @@ fields:
   phone_number:
     type: text
     display: Phone Number
+  linkedin:
+    type: text
+    display: LinkedIn
+  facebook:
+    type: text
+    display: Facebook
+  twitter:
+    type: text
+    display: Twitter
+
 
   # add your fields here...

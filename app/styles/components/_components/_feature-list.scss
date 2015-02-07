@@ -2,9 +2,12 @@
 Features List
 ========================================================================== */
 .features-list {
-    padding: 100px 0;
+    padding: 30px 0;
     * {
         text-align: center;
+    }
+    @include breakpoint(small) {
+        padding: 100px 0;
     }
 }
 .features-list h1 {
@@ -31,14 +34,21 @@ Features List
     }
     display: block;
     margin: 0 auto 20px;
-    width: 90px;
-    height: 90px;
+    width: 45px;
+    height: 45px;
     border: solid 2px $dark-blue;;
     border-radius: 50%;
     vertical-align: top;
     text-align: center;
-    font-size: 25px;
-    line-height: 90px;
+    font-size: 15px;
+    line-height: 45px;
+    @include breakpoint(small) {
+        font-size: 25px;
+        width: 90px;
+        height: 90px;  
+        font-size: 25px;
+        line-height: 90px;
+    }
 }
 .feature-icon i {
     color: $dark-blue;
