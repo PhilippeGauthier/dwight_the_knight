@@ -4239,6 +4239,7 @@ Hero
 }
 
 .hero h1 {
+  margin-top: 50px;
   /* Landscape phone to portrait tablet */
 }
 @media (min-width: 767px) {
