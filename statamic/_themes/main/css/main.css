@@ -4265,9 +4265,14 @@ Hero
 }
 
 .hero span.phone {
-  color: #3f5765;
-  letter-spacing: .02em;
-  text-shadow: 2px 2px 0px #ffc11f, 4px 4px 0px rgba(0, 0, 0, 0.2);
+  /* Landscape phone to portrait tablet */
+}
+@media (min-width: 767px) {
+  .hero span.phone {
+    color: #3f5765;
+    letter-spacing: .02em;
+    text-shadow: 2px 2px 0px #ffc11f, 4px 4px 0px rgba(0, 0, 0, 0.2);
+  }
 }
 
 #home {

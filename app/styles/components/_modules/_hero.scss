@@ -58,11 +58,14 @@ Hero
 }
 
 .hero span.phone {
-    color: $dark-blue;
-    letter-spacing: .02em;
-    text-shadow: 
-      2px 2px 0px $yellow, 
-      4px 4px 0px rgba(0, 0, 0, 0.2);
+    @include breakpoint(small) {
+        color: $dark-blue;
+        letter-spacing: .02em;
+        text-shadow: 
+          2px 2px 0px $yellow, 
+          4px 4px 0px rgba(0, 0, 0, 0.2);       
+    }
+
 }
 
 #home {
