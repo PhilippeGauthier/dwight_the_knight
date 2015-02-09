@@ -36,7 +36,7 @@ Hero
     margin-top: 50px;
     @include breakpoint(small) {
         margin: 80px 0 45px 0;
-        font-size: 45px;
+        font-size: 70px;
     }
 }
 
@@ -54,16 +54,14 @@ Hero
     }
 }
 
-.hero span.phone {
+.hero .shadow {
     a {
         color: $dark-blue;
     }
     @include breakpoint(small) {
         color: $dark-blue;
-        letter-spacing: .02em;
         text-shadow: 
-          2px 2px 0px $yellow, 
-          4px 4px 0px rgba(0, 0, 0, 0.2);       
+          2px 2px 0px $yellow,     
     }
 
 }

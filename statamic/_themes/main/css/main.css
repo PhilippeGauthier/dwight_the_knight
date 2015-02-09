@@ -4245,7 +4245,7 @@ Hero
 @media (min-width: 767px) {
   .hero h1 {
     margin: 80px 0 45px 0;
-    font-size: 45px;
+    font-size: 70px;
   }
 }
 
@@ -4265,17 +4265,16 @@ Hero
   }
 }
 
-.hero span.phone {
+.hero .shadow {
   /* Landscape phone to portrait tablet */
 }
-.hero span.phone a {
+.hero .shadow a {
   color: #3f5765;
 }
 @media (min-width: 767px) {
-  .hero span.phone {
+  .hero .shadow {
     color: #3f5765;
-    letter-spacing: .02em;
-    text-shadow: 2px 2px 0px #ffc11f, 4px 4px 0px rgba(0, 0, 0, 0.2);
+    text-shadow: 2px 2px 0px #ffc11f;
   }
 }
 
