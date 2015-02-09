@@ -4240,6 +4240,7 @@ Hero
 
 .hero h1 {
   margin-top: 50px;
+  font-style: italic;
   /* Landscape phone to portrait tablet */
 }
 @media (min-width: 767px) {
