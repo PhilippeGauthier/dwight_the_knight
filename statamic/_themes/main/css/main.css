@@ -4277,7 +4277,7 @@ Hero
 @media (min-width: 767px) {
   .hero .shadow {
     color: #3f5765;
-    text-shadow: 2px 2px 0px #ffc11f;
+    text-shadow: 3px 3px 0px #ffc11f;
   }
 }
 
