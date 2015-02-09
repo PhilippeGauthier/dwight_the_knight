@@ -3612,6 +3612,10 @@ html, body {
   width: 100%;
 }
 
+body {
+  font-size: 16px;
+}
+
 /*
 * Addresses margins handled incorrectly in IE 6/7.
 */
@@ -4569,18 +4573,20 @@ Showcase
 .showcase h1 {
   margin: 20px 0;
   color: #fff;
-  font-weight: 400;
-  font-size: 22px;
+  font-weight: 600;
+  font-size: 36px;
+  font-style: italic;
   /* Landscape phone to portrait tablet */
 }
 @media (min-width: 767px) {
   .showcase h1 {
-    margin: 100px 0 20px 0;
+    margin: 80px 0 30px 0;
   }
 }
 
 .showcase p {
   margin-bottom: 25px;
+  font-size: 22px;
   color: #fff;
 }
 
