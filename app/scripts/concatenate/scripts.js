@@ -146,14 +146,6 @@ $(document).ready(function() {
                     }
                 }
             },
-            Middle_Name: {
-                trigger: 'blur',
-                validators: {
-                    notEmpty: {
-                        message: 'The last name is required'
-                    }
-                }
-            },
             Email_Address: {
                 trigger: 'blur',
                 validators: {
@@ -190,6 +182,190 @@ $(document).ready(function() {
                     stringLength: {
                         min: 2,
                         message: 'Please select a Tax Debt Amount'
+                    }
+                }
+            },
+            button: {
+                // The submit buttons selector
+                selector: '[type="submit"]',
+
+                // The disabled class
+                disabled: 'disabled'
+            }
+        },
+    })
+    .on('success.field.fv', function(e, data) {
+        if (data.fv.getInvalidFields().length > 0) {    // There is invalid field
+            data.fv.disableSubmitButtons(true);
+        }
+    });
+});
+
+$(document).ready(function() {
+    $('#mortgage_form').formValidation({
+        framework: 'bootstrap',
+        icon: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        live: true,
+        fields: {
+            First_Name: {
+                trigger: 'blur',
+                validators: {
+                    notEmpty: {
+                        message: 'First name is required'
+                    }
+                }
+            },
+            Last_Name: {
+                trigger: 'blur',
+                validators: {
+                    notEmpty: {
+                        message: 'Last name is required'
+                    }
+                }
+            },
+            Email_Address: {
+                trigger: 'blur',
+                validators: {
+                    notEmpty: {
+                        message: 'Email address is required'
+                    },
+                    emailAddress: {
+                        message: 'The input is not a valid email address'
+                    }
+                }
+            },
+            Phone_Number: {
+                trigger: 'blur',
+                validators: {
+                    notEmpty: {
+                        message: 'Phone Number is Required'
+                    }
+                }
+            },
+            Estimated_Property_Value: {
+                trigger: 'blur',
+                validators: {
+                    notEmpty: {
+                        message: 'Property value is Required'
+                    }
+                }
+            },
+            Loan_Amount: {
+                trigger: 'blur',
+                validators: {
+                    notEmpty: {
+                        message: 'Property value is Required'
+                    }
+                }
+            },
+            Property_Street: {
+                trigger: 'blur',
+                validators: {
+                    notEmpty: {
+                        message: 'Your Street Name is Required'
+                    }
+                }
+            },
+            Property_City: {
+                trigger: 'blur',
+                validators: {
+                    notEmpty: {
+                        message: 'City Name is Required'
+                    }
+                }
+            },
+            Property_State: {
+                trigger: 'blur',
+                validators: {
+                    stringLength: {
+                        min: 2,
+                        message: 'Please select a type of home'
+                    }
+                }
+            },
+            Zip_Code: {
+                trigger: 'blur',
+                validators: {
+                    notEmpty: {
+                        message: 'Zip Code is Required'
+                    },
+                    numeric: {
+                        message: 'Zip Code can only contain numbers'
+                    }
+                }
+            },
+            Type_Of_Home: {
+                trigger: 'blur',
+                validators: {
+                    stringLength: {
+                        min: 2,
+                        message: 'Please select a type of home'
+                    }
+                }
+            },
+            FHA_Status: {
+                trigger: 'blur',
+                validators: {
+                    stringLength: {
+                        min: 2,
+                        message: 'Please select a FHA status'
+                    }
+                }
+            },
+            Credit_Status: {
+                trigger: 'blur',
+                validators: {
+                    stringLength: {
+                        min: 2,
+                        message: 'Please select your credit status'
+                    }
+                }
+            },
+            Additional_Cash: {
+                trigger: 'blur',
+                validators: {
+                    notEmpty: {
+                        message: 'Please answer "No" or the amount you would like to borrow'
+                    }
+                }
+            },
+            Military_Status: {
+                trigger: 'blur',
+                validators: {
+                    stringLength: {
+                        min: 2,
+                        message: 'Please select your military status'
+                    }
+                }
+            },
+            Employment_Status: {
+                trigger: 'blur',
+                validators: {
+                    stringLength: {
+                        min: 2,
+                        message: 'Please select your employment status'
+                    }
+                }
+            },
+            Verifiable_Income: {
+                trigger: 'blur',
+                validators: {
+                    stringLength: {
+                        min: 2,
+                        message: 'Please select your whether your income is verifiable'
+                    }
+                }
+            },
+            Bankruptcy_Or_Foreclosure: {
+                trigger: 'blur',
+                validators: {
+                    stringLength: {
+                        min: 2,
+                        message: 'Please select your whether you have filed for bankruptcy or foreclosure in the last three years'
                     }
                 }
             },

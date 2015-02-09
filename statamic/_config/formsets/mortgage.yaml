@@ -14,9 +14,23 @@ submission_save_path: _forms/_mortgage/
 allowed:
   - First_Name
   - Last_Name
-  - Phone_Number
   - Email_Address
+  - Phone_Number
+  - Secondary_Phone_Number
+  - Estimated_Property_Value
+  - Loan_Amount
+  - Property_Street
+  - Property_City
+  - Property_State
   - Zip_Code
+  - Type_Of_Home
+  - FHA_Status
+  - Credit_Status
+  - Additional_Cash
+  - Military_Status
+  - Employment_Status
+  - Verifiable_Income
+  - Bankruptcy_Or_Foreclosure
 
 # You are not required to require fields, but once you do, any missing
 # from the POST will squash this submission and send a list of
@@ -24,19 +38,28 @@ allowed:
 required:
   - First_Name
   - Last_Name
-  - Phone_Number
   - Email_Address
+  - Phone_Number
+  - Estimated_Property_Value
+  - Loan_Amount
+  - Property_Street
+  - Property_City
+  - Property_State
   - Zip_Code
+  - Type_Of_Home
+  - FHA_Status
+  - Credit_Status
+  - Additional_Cash
+  - Military_Status
+  - Employment_Status
+  - Verifiable_Income
+  - Bankruptcy_Or_Foreclosure
 
 submission_save_extension: yaml
 
 # Apply validation rules to specific fields. Refer to documentation
 # for a full list of available rules and their format
-validate:
-  First_Name: alpha
-  Last_Name: alpha
-  Phone_Number: int
-  Zip_Code: int
+
 
 # Error messages can be mapped to your fields and passed to the
 # template upon failure. They will be available here:
@@ -54,7 +77,7 @@ messages:
 
 # Configure notification email
 email:
-  to: "travis@knightlinelegal.com"
+  to: travis@knightlinelegal.com
   from: admin@dwighttheknight.com
   subject: Mortgage Lead // Dwight The Knight
   automagic: true
