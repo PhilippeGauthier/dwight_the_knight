@@ -14,8 +14,10 @@ submission_save_path: _forms/_tax_debt/
 allowed:
   - First_Name
   - Last_Name
-  - Phone_Number
   - Email_Address
+  - Phone_Number
+  - Phone_Number_Secondary
+  - Tax_Debt_Amount
   - Zip_Code
 
 # You are not required to require fields, but once you do, any missing
@@ -24,19 +26,16 @@ allowed:
 required:
   - First_Name
   - Last_Name
-  - Phone_Number
   - Email_Address
+  - Phone_Number
+  - Phone_Number_Secondary
   - Zip_Code
 
 submission_save_extension: yaml
 
 # Apply validation rules to specific fields. Refer to documentation
 # for a full list of available rules and their format
-validate:
-  First_Name: alpha
-  Last_Name: alpha
-  Phone_Number: int
-  Zip_Code: int
+
 
 # Error messages can be mapped to your fields and passed to the
 # template upon failure. They will be available here:

@@ -128,7 +128,7 @@ $(document).ready(function() {
             invalid: 'glyphicon glyphicon-remove',
             validating: 'glyphicon glyphicon-refresh'
         },
-        live: false,
+        live: true,
         fields: {
             First_Name: {
                 trigger: 'blur',
@@ -181,9 +181,15 @@ $(document).ready(function() {
                 validators: {
                     notEmpty: {
                         message: 'The Phone Number is Required'
-                    },
-                    numeric: {
-                        message: 'Can only contain numbers'
+                    }
+                }
+            },
+            Tax_Debt_Amount: {
+                trigger: 'blur',
+                validators: {
+                    stringLength: {
+                        min: 2,
+                        message: 'Please select a Tax Debt Amount'
                     }
                 }
             },
@@ -195,6 +201,11 @@ $(document).ready(function() {
                 disabled: 'disabled'
             }
         },
+    })
+    .on('success.field.fv', function(e, data) {
+        if (data.fv.getInvalidFields().length > 0) {    // There is invalid field
+            data.fv.disableSubmitButtons(true);
+        }
     });
 });
 

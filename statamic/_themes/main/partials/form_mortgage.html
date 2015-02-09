@@ -1,7 +1,8 @@
+
 {{ if {raven:success} }}
     <h2>Thank you for your interest!</h2>
-    <p>One of our mortgage professionals will get back to you shortly.</p>
-  {{ else }}
+    <p>One of our tax professionals will get back to you shortly.</p>
+{{ else }}
 
   {{ raven:errors }}
 
@@ -28,41 +29,167 @@
     {{ endif }}
 
   {{ /raven:errors }}
-  
+
   {{ raven:form formset="mortgage" attr="class:form-horizontal|id:dwight_form"}}
 
     <div class="form-group">
-        <label class="col-sm-4 control-label">First Name</label>
+        <label class="col-sm-5 control-label">First Name *</label>
         <div class="col-sm-7">
             <input type="text" class="form-control" name="First_Name" placeholder="First Name" />
         </div>
     </div>
 
     <div class="form-group">
-        <label class="col-sm-4 control-label">Last Name</label>
+        <label class="col-sm-5 control-label">Last Name *</label>
         <div class="col-sm-7">
             <input type="text" class="form-control" name="Last_Name" placeholder="Last Name" />
         </div>
     </div>
 
     <div class="form-group">
-        <label class="col-sm-4 control-label">Email Address</label>
+        <label class="col-sm-5 control-label">Email Address *</label>
         <div class="col-sm-7">
             <input type="text" class="form-control" name="Email_Address" placeholder="Email Address"/>
         </div>
     </div>
 
     <div class="form-group">
-        <label class="col-sm-4 control-label">Phone Number</label>
+        <label class="col-sm-5 control-label">Phone Number *</label>
         <div class="col-sm-7">
             <input type="text" class="form-control" name="Phone_Number" placeholder="Phone Number"/>
         </div>
     </div>
 
     <div class="form-group">
-        <label class="col-sm-4 control-label">Zip Code</label>
+        <label class="col-sm-5 control-label">Secondary Phone Number</label>
         <div class="col-sm-7">
-            <input type="text" class="form-control" name="Zip_Code" placeholder="Zip Code"/>
+            <input type="text" class="form-control" name="Phone_Number_Secondary" placeholder="Secondary Phone Number"/>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-5 control-label">Estimated Property Value *</label>
+        <div class="col-sm-7">
+            <input type="text" class="form-control" name="Estimated_Property_Value" placeholder="Estimated Property Value"/>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-5 control-label">Property Street *</label>
+        <div class="col-sm-7">
+            <input type="text" class="form-control" name="Property_Street" placeholder="Property Street"/>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-5 control-label">Property City *</label>
+        <div class="col-sm-7">
+            <input type="text" class="form-control" name="Property_City" placeholder="Property City"/>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-5 control-label">Property Zip Code *</label>
+        <div class="col-sm-7">
+            <input type="text" class="form-control" name="Zip_Code" placeholder="Property Zip Code"/>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-5 control-label">Loan Amount *</label>
+        <div class="col-sm-7">
+            <input type="text" class="form-control" name="Estimated_Property_Value" placeholder="Loan Amount"/>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-5 control-label">Type of Home *</label>
+        <div class="col-sm-7">
+            <select class="form-control" name="Type_Of_Home">
+              <option>-</option>
+              <option>Single Family</option>
+              <option>Multi Family</option>
+              <option>Condo</option>
+              <option>Townhome</option>
+              <option>Mobile Home</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-5 control-label">Is your loan a FHA loan *</label>
+        <div class="col-sm-7">
+            <select class="form-control" name="FHA_Status">
+              <option>-</option>
+              <option>Yes</option>
+              <option>No</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-5 control-label">Your Credit Status *</label>
+        <div class="col-sm-7">
+            <select class="form-control" name="Credit_Status">
+              <option>-</option>
+              <option>Excellent</option>
+              <option>Good</option>
+              <option>Fair</option>
+              <option>Poor</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-5 control-label">Additional Cash to Borrow</label>
+        <div class="col-sm-7">
+            <input type="text" class="form-control" name="Additional_Cash" placeholder="Additonal Cash to Borrow"/>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-5 control-label">Active or Previous Military Service? *</label>
+        <div class="col-sm-7">
+            <select class="form-control" name="Military_Status">
+              <option>-</option>
+              <option>Yes</option>
+              <option>No</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-5 control-label">Employment Status *</label>
+        <div class="col-sm-7">
+            <select class="form-control" name="Employment_Status">
+              <option>-</option>
+              <option>Employed</option>
+              <option>Self-Employed</option>
+              <option>Retired</option>
+              <option>Unemployed</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-5 control-label">Verifiable Income? *</label>
+        <div class="col-sm-7">
+            <select class="form-control" name="Verifiable_Income">
+              <option>-</option>
+              <option>Yes</option>
+              <option>No</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-5 control-label">Bankruptcy or Foreclosure in Past Three Years? *</label>
+        <div class="col-sm-7">
+            <select class="form-control" name="Verifiable_Income">
+              <option>-</option>
+              <option>Yes</option>
+              <option>No</option>
+            </select>
         </div>
     </div>
 
@@ -71,10 +198,11 @@
 
     <div class="form-group">
         <div class="col-sm-offset-4 col-sm-7">
-            <input type="submit" class="btn btn-success btn-lg" name="button" value="Sign up"></button>
+            <input type="submit" class="btn btn-success btn-lg" disabled="disabled" name="button" value="Sign up"></button>
         </div>
     </div>
 
   {{ /raven:form }}
 
 {{ endif }}
+
