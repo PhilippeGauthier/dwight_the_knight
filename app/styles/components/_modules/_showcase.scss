@@ -17,8 +17,10 @@ Showcase
 }
 .showcase p {
     margin-bottom: 25px;
-    font-size: 22px;
     color: #fff;
+    @include breakpoint(small) {
+        font-size: 22px;
+    }
 }
 .device {
     position: absolute;

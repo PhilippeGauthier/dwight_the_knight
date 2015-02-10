@@ -100,11 +100,19 @@ header i {
         margin: 45px 0 20px;
         color: white;
         text-shadow: none;
-        font-weight: 500;
+        font-weight: 600;
+        text-shadow: 3px 3px 4px rgba(black,.2);
         font-size: 36px;
         @include breakpoint(small) {
             margin: 80px 0 45px 0;
             font-size: 45px;
+        }
+    }
+    h2 {
+        font-size: 18px;
+        text-shadow: none;
+        @include breakpoint(small) {
+            font-size: 28px;
         }
     }
     .phone {

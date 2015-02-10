@@ -6,13 +6,24 @@ fields:
     hide: yes
   content:
     type: hidden
-  main_logo:
-    type: file
-    allowed: [png, jpg, gif]
-    destination: assets/img/
   phone_number:
     type: text
     display: Phone Number
+  about: 
+    type: redactor
+    display: About Us text
+  address:
+    type: text
+    display: Address Text in Footer
+  address_link:
+    type: text
+    display: Address Link (Google Map Link)
+  email:
+    type: text
+    display: Email Address Text
+  email_link:
+    type: text
+    display: Email Address
   linkedin:
     type: text
     display: LinkedIn

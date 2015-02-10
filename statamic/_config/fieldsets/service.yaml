@@ -15,9 +15,17 @@ fields:
     allowed: [png, jpg, gif]
     destination: assets/img/
 
+  call_to_action:
+    display: Call To Action
+    type: text
+
   phone_number:
     display: Phone Number
     type: text
+
+  call_to_action_form:
+    type: text
+    display: Call To Action Above Form
 
   summary:
     display: Landing Page summary
