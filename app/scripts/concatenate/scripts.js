@@ -135,7 +135,7 @@ $(document).ready(function() {
             invalid: 'glyphicon glyphicon-remove',
             validating: 'glyphicon glyphicon-refresh'
         },
-        live: true,
+        live: 'disabled',
         fields: {
             First_Name: {
                 trigger: 'blur',
@@ -216,7 +216,7 @@ $(document).ready(function() {
             invalid: 'glyphicon glyphicon-remove',
             validating: 'glyphicon glyphicon-refresh'
         },
-        live: true,
+        live: 'disabled',
         fields: {
             First_Name: {
                 trigger: 'blur',
@@ -400,7 +400,7 @@ $(document).ready(function() {
             invalid: 'glyphicon glyphicon-remove',
             validating: 'glyphicon glyphicon-refresh'
         },
-        live: true,
+        live: 'disabled',
         fields: {
             First_Name: {
                 trigger: 'blur',
@@ -567,7 +567,7 @@ $(document).ready(function() {
             invalid: 'glyphicon glyphicon-remove',
             validating: 'glyphicon glyphicon-refresh'
         },
-        live: true,
+        live: 'disabled',
         fields: {
             First_Name: {
                 trigger: 'blur',
@@ -729,7 +729,7 @@ $(document).ready(function() {
             invalid: 'glyphicon glyphicon-remove',
             validating: 'glyphicon glyphicon-refresh'
         },
-        live: true,
+        live: 'disabled',
         fields: {
             First_Name: {
                 trigger: 'blur',
@@ -864,7 +864,7 @@ $(document).ready(function() {
             invalid: 'glyphicon glyphicon-remove',
             validating: 'glyphicon glyphicon-refresh'
         },
-        live: true,
+        live: 'disabled',
         fields: {
             First_Name: {
                 trigger: 'blur',
