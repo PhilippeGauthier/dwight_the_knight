@@ -29,7 +29,7 @@
 
   {{ /raven:errors }}
   
-  {{ raven:form formset="insurance_life" attr="class:form-horizontal|id:dwight_form"}}
+  {{ raven:form formset="insurance_life" attr="class:form-horizontal|id:insurance_life"}}
 
     <div class="form-group">
         <label class="col-sm-5 control-label">First Name *</label>
@@ -42,6 +42,38 @@
         <label class="col-sm-5 control-label">Last Name *</label>
         <div class="col-sm-7">
             <input type="text" class="form-control" name="Last_Name" placeholder="Last Name" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-5 control-label">Gender *</label>
+        <div class="col-sm-7">
+            <select class="form-control" name="Gender">
+              <option>-</option>
+              <option>Male</option>
+              <option>Female</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-5 control-label">Age *</label>
+        <div class="col-sm-7">
+            <input type="text" class="form-control" name="Age" placeholder="Age"/>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-5 control-label">Height *</label>
+        <div class="col-sm-7">
+            <input type="text" class="form-control" name="Height" placeholder="Height"/>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-5 control-label">Weight *</label>
+        <div class="col-sm-7">
+            <input type="text" class="form-control" name="Weight" placeholder="Weight"/>
         </div>
     </div>
 
@@ -60,17 +92,102 @@
     </div>
 
     <div class="form-group">
+        <label class="col-sm-5 control-label">Secondary Phone Number</label>
+        <div class="col-sm-7">
+            <input type="text" class="form-control" name="Phone_Number_Secondary" placeholder="Secondary Phone Number"/>
+        </div>
+    </div>
+
+    <div class="form-group">
         <label class="col-sm-5 control-label">Zip Code *</label>
         <div class="col-sm-7">
             <input type="text" class="form-control" name="Zip_Code" placeholder="Zip Code"/>
         </div>
     </div>
 
-    <div class="col-md-7 col-md-offset-5" style="margin-bottom: 15px; margin-top: -10px;">* Required Field</div>
+
+    <div class="form-group">
+        <label class="col-sm-5 control-label">Current Life Insurance Policy *</label>
+        <div class="col-sm-7">
+            <select class="form-control" name="Current_Life_Insurance_Policy">
+              <option>-</option>
+              <option>Yes</option>
+              <option>No</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-5 control-label">Amount of Life Insurance Coverage You Are Seeking *</label>
+        <div class="col-sm-7">
+            <select class="form-control" name="Amount">
+              <option>-</option>
+              <option>$0 - $299,999</option>
+              <option>$300,000 - $599,999</option>
+              <option>$600,000 - $999,999</option>
+              <option>$1,000,000 - $1,499,999</option>
+              <option>$1,500,000 - $1,999,999</option>
+              <option>$2,000,000 - $4,999,999</option>
+              <option>Over $5,000,000</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-5 control-label">How Long Do You Want This Policy to Last *</label>
+        <div class="col-sm-7">
+          <select class="form-control" name="Duration">
+              <option>-</option>
+              <option>10 Years</option>
+              <option>15 Years</option>
+              <option>20 Years</option>
+              <option>30 Years</option>
+              <option>Over 30 Years</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-5 control-label">History of Tabacco Use *</label>
+        <div class="col-sm-7">
+            <select class="form-control" name="Tobacco_Use">
+              <option>-</option>
+              <option>Yes</option>
+              <option>No</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-5 control-label">Family History of Cancer, Heart Disease, Stroke, or Diabetes *</label>
+        <div class="col-sm-7">
+            <select class="form-control" name="Cancer_Heart_Stroke_Diabetes">
+              <option>-</option>
+              <option>Yes</option>
+              <option>No</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-5 control-label">Overall Health *</label>
+        <div class="col-sm-7">
+            <select class="form-control" name="Overall_Health">
+              <option>-</option>
+              <option>Excellent</option>
+              <option>Good</option>
+              <option>Fair</option>
+              <option>Poor</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="col-sm-offset-5 col-sm-7" style="margin-bottom: 15px; margin-top: -10px;">* Field Required</div>
+
 
     <div class="form-group">
         <div class="col-sm-offset-5 col-sm-7">
-            <input type="submit" class="btn btn-success btn-lg" name="button" value="Submit"></button>
+            <input type="submit" class="btn btn-success btn-lg" disabled="disabled" name="button" value="Submit"></button>
         </div>
     </div>
 

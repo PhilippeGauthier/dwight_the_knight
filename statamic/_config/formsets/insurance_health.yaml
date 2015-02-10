@@ -14,9 +14,17 @@ submission_save_path: _forms/_insurance_health/
 allowed:
   - First_Name
   - Last_Name
-  - Phone_Number
-  - Email_Address
+  - Gender
+  - Age
+  - Tobacco_Use
+  - College
+  - Address
+  - City
+  - State
   - Zip_Code
+  - Email_Address
+  - Phone_Number
+  - Secondary_Phone_Number
 
 # You are not required to require fields, but once you do, any missing
 # from the POST will squash this submission and send a list of
@@ -24,19 +32,21 @@ allowed:
 required:
   - First_Name
   - Last_Name
-  - Phone_Number
-  - Email_Address
+  - Gender
+  - Age
+  - Tobacco_Use
+  - College
+  - Address
+  - City
+  - State
   - Zip_Code
+  - Email_Address
+  - Phone_Number
 
 submission_save_extension: yaml
 
 # Apply validation rules to specific fields. Refer to documentation
 # for a full list of available rules and their format
-validate:
-  First_Name: alpha
-  Last_Name: alpha
-  Phone_Number: int
-  Zip_Code: int
 
 # Error messages can be mapped to your fields and passed to the
 # template upon failure. They will be available here:

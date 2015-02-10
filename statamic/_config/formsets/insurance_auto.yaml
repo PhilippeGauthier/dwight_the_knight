@@ -14,9 +14,18 @@ submission_save_path: _forms/_insurance_auto/
 allowed:
   - First_Name
   - Last_Name
-  - Phone_Number
+  - Gender
+  - Age
+  - Marital_Status
   - Email_Address
-  - Zip_Code
+  - Phone_Number
+  - Secondary_Phone_Number
+  - Car_Year
+  - Car_Make
+  - Car_Model
+  - Ownership_Status
+  - Primary_Use
+  - Estimated_Annual_Mileage
 
 # You are not required to require fields, but once you do, any missing
 # from the POST will squash this submission and send a list of
@@ -24,19 +33,23 @@ allowed:
 required:
   - First_Name
   - Last_Name
-  - Phone_Number
+  - Gender
+  - Age
+  - Marital_Status
   - Email_Address
-  - Zip_Code
+  - Phone_Number
+  - Car_Year
+  - Car_Make
+  - Car_Model
+  - Ownership_Status
+  - Primary_Use
+  - Estimated_Annual_Mileage
+
 
 submission_save_extension: yaml
 
 # Apply validation rules to specific fields. Refer to documentation
 # for a full list of available rules and their format
-validate:
-  First_Name: alpha
-  Last_Name: alpha
-  Phone_Number: int
-  Zip_Code: int
 
 # Error messages can be mapped to your fields and passed to the
 # template upon failure. They will be available here:

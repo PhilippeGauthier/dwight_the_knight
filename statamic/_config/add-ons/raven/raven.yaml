@@ -12,7 +12,7 @@ submission_save_to_file: true
 # Location (from root) to save form submissions
 submission_save_path: _forms/
 
-send_notification_email: true
+send_notification_email: false
 
 # Choose your mail service
 # available services:

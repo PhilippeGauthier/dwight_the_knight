@@ -118,10 +118,17 @@ $('a[href*=#]:not([href=#])').click(function() {
 	}
 });
 
+/***************** Modal Options ******************/
+// $('#privacyPolicy').modal({
+//   backdrop: true
+// })
+
+
+
 /***************** Form Validation ******************/
 
 $(document).ready(function() {
-    $('#dwight_form').formValidation({
+    $('#tax_debt').formValidation({
         framework: 'bootstrap',
         icon: {
             valid: 'glyphicon glyphicon-ok',
@@ -202,7 +209,7 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-    $('#mortgage_form').formValidation({
+    $('#mortgage').formValidation({
         framework: 'bootstrap',
         icon: {
             valid: 'glyphicon glyphicon-ok',
@@ -283,7 +290,7 @@ $(document).ready(function() {
                 validators: {
                     stringLength: {
                         min: 2,
-                        message: 'Please select a type of home'
+                        message: 'Please select a state'
                     }
                 }
             },
@@ -385,5 +392,621 @@ $(document).ready(function() {
     });
 });
 
+$(document).ready(function() {
+    $('#insurance_auto').formValidation({
+        framework: 'bootstrap',
+        icon: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        live: true,
+        fields: {
+            First_Name: {
+                trigger: 'blur',
+                validators: {
+                    notEmpty: {
+                        message: 'First name is required'
+                    }
+                }
+            },
+            Last_Name: {
+                trigger: 'blur',
+                validators: {
+                    notEmpty: {
+                        message: 'Last name is required'
+                    }
+                }
+            },
+            Gender: {
+                trigger: 'blur',
+                validators: {
+                    stringLength: {
+                        min: 2,
+                        message: 'Please select a gender'
+                    }
+                }
+            },
+            Age: {
+                trigger: 'blur',
+                validators: {
+                    notEmpty: {
+                        message: 'Age is required'
+                    },
+                    numeric: {
+                        message: 'Age can only contain numbers'
+                    }
+                }
+            },
+            Height: {
+                trigger: 'blur',
+                validators: {
+                    notEmpty: {
+                        message: 'Height is required'
+                    }
+                }
+            },
+            Weight: {
+                trigger: 'blur',
+                validators: {
+                    notEmpty: {
+                        message: 'Weight is required'
+                    }
+                }
+            },
+            Marital_Status: {
+                trigger: 'blur',
+                validators: {
+                    stringLength: {
+                        min: 2,
+                        message: 'Please select a marrital Status'
+                    }
+                }
+            },
+            Email_Address: {
+                trigger: 'blur',
+                validators: {
+                    notEmpty: {
+                        message: 'Email address is required'
+                    },
+                    emailAddress: {
+                        message: 'The input is not a valid email address'
+                    }
+                }
+            },
+            Phone_Number: {
+                trigger: 'blur',
+                validators: {
+                    notEmpty: {
+                        message: 'Phone Number is Required'
+                    }
+                }
+            },
+            Zip_Code: {
+                trigger: 'blur',
+                validators: {
+                    notEmpty: {
+                        message: 'Zip Code is Required'
+                    },
+                    numeric: {
+                        message: 'Zip Code can only contain numbers'
+                    }
+                }
+            },
+            Car_Year: {
+                trigger: 'blur',
+                validators: {
+                    notEmpty: {
+                        message: 'Car Year is Required'
+                    }
+                }
+            },
+            Car_Make: {
+                trigger: 'blur',
+                validators: {
+                    notEmpty: {
+                        message: 'Car Make is Required'
+                    }
+                }
+            },
+            Car_Model: {
+                trigger: 'blur',
+                validators: {
+                    notEmpty: {
+                        message: 'Car Model is Required'
+                    }
+                }
+            },
+            Ownership_Status: {
+                trigger: 'blur',
+                validators: {
+                    stringLength: {
+                        min: 2,
+                        message: 'Please select an ownership status'
+                    }
+                }
+            },
+            Primary_Use: {
+                trigger: 'blur',
+                validators: {
+                    stringLength: {
+                        min: 2,
+                        message: 'Please select a primary use'
+                    }
+                }
+            },
+            Estimated_Annual_Mileage: {
+                trigger: 'blur',
+                validators: {
+                    notEmpty: {
+                        message: 'Estiamted Annual Mileage is required'
+                    }
+                }
+            },
+            button: {
+                // The submit buttons selector
+                selector: '[type="submit"]',
+
+                // The disabled class
+                disabled: 'disabled'
+            }
+        },
+    })
+    .on('success.field.fv', function(e, data) {
+        if (data.fv.getInvalidFields().length > 0) {    // There is invalid field
+            data.fv.disableSubmitButtons(true);
+        }
+    });
+});
+
+$(document).ready(function() {
+    $('#insurance_life').formValidation({
+        framework: 'bootstrap',
+        icon: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        live: true,
+        fields: {
+            First_Name: {
+                trigger: 'blur',
+                validators: {
+                    notEmpty: {
+                        message: 'First name is required'
+                    }
+                }
+            },
+            Last_Name: {
+                trigger: 'blur',
+                validators: {
+                    notEmpty: {
+                        message: 'Last name is required'
+                    }
+                }
+            },
+            Gender: {
+                trigger: 'blur',
+                validators: {
+                    stringLength: {
+                        min: 2,
+                        message: 'Please select a gender'
+                    }
+                }
+            },
+            Age: {
+                trigger: 'blur',
+                validators: {
+                    notEmpty: {
+                        message: 'Age is required'
+                    },
+                    numeric: {
+                        message: 'Age can only contain numbers'
+                    }
+                }
+            },
+            Height: {
+                trigger: 'blur',
+                validators: {
+                    notEmpty: {
+                        message: 'Height is required'
+                    }
+                }
+            },
+            Weight: {
+                trigger: 'blur',
+                validators: {
+                    notEmpty: {
+                        message: 'Weight is required'
+                    }
+                }
+            },
+            Email_Address: {
+                trigger: 'blur',
+                validators: {
+                    notEmpty: {
+                        message: 'Email address is required'
+                    },
+                    emailAddress: {
+                        message: 'The input is not a valid email address'
+                    }
+                }
+            },
+            Phone_Number: {
+                trigger: 'blur',
+                validators: {
+                    notEmpty: {
+                        message: 'Phone Number is Required'
+                    }
+                }
+            },
+            Zip_Code: {
+                trigger: 'blur',
+                validators: {
+                    notEmpty: {
+                        message: 'Zip Code is Required'
+                    },
+                    numeric: {
+                        message: 'Zip Code can only contain numbers'
+                    }
+                }
+            },
+            Current_Life_Insurance_Policy: {
+                trigger: 'blur',
+                validators: {
+                    stringLength: {
+                        min: 2,
+                        message: 'Please select a whether you have a current life insurance policy'
+                    }
+                }
+            },
+            Amount: {
+                trigger: 'blur',
+                validators: {
+                    stringLength: {
+                        min: 2,
+                        message: 'Please select the amount of coverage you are seeking'
+                    }
+                }
+            },
+            Duration: {
+                trigger: 'blur',
+                validators: {
+                    stringLength: {
+                        min: 2,
+                        message: 'Please select the duration of your coverage'
+                    }
+                }
+            },
+            Tobacco_Use: {
+                trigger: 'blur',
+                validators: {
+                    stringLength: {
+                        min: 2,
+                        message: 'Please select if you have a history of tobacco use'
+                    }
+                }
+            },
+            Cancer_Heart_Stroke_Diabetes: {
+                trigger: 'blur',
+                validators: {
+                    stringLength: {
+                        min: 2,
+                        message: 'Please select if you have a history of the stated health issues'
+                    }
+                }
+            },
+            Overall_Health: {
+                trigger: 'blur',
+                validators: {
+                    stringLength: {
+                        min: 2,
+                        message: 'Please select your current health condition'
+                    }
+                }
+            },
+            button: {
+                // The submit buttons selector
+                selector: '[type="submit"]',
+
+                // The disabled class
+                disabled: 'disabled'
+            }
+        },
+    })
+    .on('success.field.fv', function(e, data) {
+        if (data.fv.getInvalidFields().length > 0) {    // There is invalid field
+            data.fv.disableSubmitButtons(true);
+        }
+    });
+});
+
+$(document).ready(function() {
+    $('#insurance_health').formValidation({
+        framework: 'bootstrap',
+        icon: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        live: true,
+        fields: {
+            First_Name: {
+                trigger: 'blur',
+                validators: {
+                    notEmpty: {
+                        message: 'First name is required'
+                    }
+                }
+            },
+            Last_Name: {
+                trigger: 'blur',
+                validators: {
+                    notEmpty: {
+                        message: 'Last name is required'
+                    }
+                }
+            },
+            Gender: {
+                trigger: 'blur',
+                validators: {
+                    stringLength: {
+                        min: 2,
+                        message: 'Please select a gender'
+                    }
+                }
+            },
+            Age: {
+                trigger: 'blur',
+                validators: {
+                    notEmpty: {
+                        message: 'Age is required'
+                    },
+                    numeric: {
+                        message: 'Age can only contain numbers'
+                    }
+                }
+            },
+            Tobacco_Use: {
+                trigger: 'blur',
+                validators: {
+                    stringLength: {
+                        min: 2,
+                        message: 'Please select if you have a history of tobacco use'
+                    }
+                }
+            },
+            College: {
+                trigger: 'blur',
+                validators: {
+                    stringLength: {
+                        min: 2,
+                        message: 'Please select if you are a college student'
+                    }
+                }
+            },
+            Address: {
+                trigger: 'blur',
+                validators: {
+                    notEmpty: {
+                        message: 'Your Street Name is Required'
+                    }
+                }
+            },
+            City: {
+                trigger: 'blur',
+                validators: {
+                    notEmpty: {
+                        message: 'City Name is Required'
+                    }
+                }
+            },
+            State: {
+                trigger: 'blur',
+                validators: {
+                    stringLength: {
+                        min: 2,
+                        message: 'Please select your state'
+                    }
+                }
+            },
+            Zip_Code: {
+                trigger: 'blur',
+                validators: {
+                    notEmpty: {
+                        message: 'Zip Code is Required'
+                    },
+                    numeric: {
+                        message: 'Zip Code can only contain numbers'
+                    }
+                }
+            },
+            Email_Address: {
+                trigger: 'blur',
+                validators: {
+                    notEmpty: {
+                        message: 'Email address is required'
+                    },
+                    emailAddress: {
+                        message: 'The input is not a valid email address'
+                    }
+                }
+            },
+            Phone_Number: {
+                trigger: 'blur',
+                validators: {
+                    notEmpty: {
+                        message: 'Phone Number is Required'
+                    }
+                }
+            },
+            button: {
+                // The submit buttons selector
+                selector: '[type="submit"]',
+
+                // The disabled class
+                disabled: 'disabled'
+            }
+        },
+    })
+    .on('success.field.fv', function(e, data) {
+        if (data.fv.getInvalidFields().length > 0) {    // There is invalid field
+            data.fv.disableSubmitButtons(true);
+        }
+    });
+});
+
+$(document).ready(function() {
+    $('#insurance_final').formValidation({
+        framework: 'bootstrap',
+        icon: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        live: true,
+        fields: {
+            First_Name: {
+                trigger: 'blur',
+                validators: {
+                    notEmpty: {
+                        message: 'First name is required'
+                    }
+                }
+            },
+            Last_Name: {
+                trigger: 'blur',
+                validators: {
+                    notEmpty: {
+                        message: 'Last name is required'
+                    }
+                }
+            },
+            Gender: {
+                trigger: 'blur',
+                validators: {
+                    stringLength: {
+                        min: 2,
+                        message: 'Please select a gender'
+                    }
+                }
+            },
+            Age: {
+                trigger: 'blur',
+                validators: {
+                    notEmpty: {
+                        message: 'Age is required'
+                    },
+                    numeric: {
+                        message: 'Age can only contain numbers'
+                    }
+                }
+            },
+            Height: {
+                trigger: 'blur',
+                validators: {
+                    notEmpty: {
+                        message: 'Height is required'
+                    }
+                }
+            },
+            Weight: {
+                trigger: 'blur',
+                validators: {
+                    notEmpty: {
+                        message: 'Weight is required'
+                    }
+                }
+            },
+            Email_Address: {
+                trigger: 'blur',
+                validators: {
+                    notEmpty: {
+                        message: 'Email address is required'
+                    },
+                    emailAddress: {
+                        message: 'The input is not a valid email address'
+                    }
+                }
+            },
+            Phone_Number: {
+                trigger: 'blur',
+                validators: {
+                    notEmpty: {
+                        message: 'Phone Number is Required'
+                    }
+                }
+            },
+            Zip_Code: {
+                trigger: 'blur',
+                validators: {
+                    notEmpty: {
+                        message: 'Zip Code is Required'
+                    },
+                    numeric: {
+                        message: 'Zip Code can only contain numbers'
+                    }
+                }
+            },
+            Amount: {
+                trigger: 'blur',
+                validators: {
+                    stringLength: {
+                        min: 2,
+                        message: 'Please select the amount of coverage you are seeking'
+                    }
+                }
+            },
+            Duration: {
+                trigger: 'blur',
+                validators: {
+                    stringLength: {
+                        min: 2,
+                        message: 'Please select the duration of your coverage'
+                    }
+                }
+            },
+            Tobacco_Use: {
+                trigger: 'blur',
+                validators: {
+                    stringLength: {
+                        min: 2,
+                        message: 'Please select if you have a history of tobacco use'
+                    }
+                }
+            },
+            Cancer_Heart_Stroke_Diabetes: {
+                trigger: 'blur',
+                validators: {
+                    stringLength: {
+                        min: 2,
+                        message: 'Please select if you have a history of the stated health issues'
+                    }
+                }
+            },
+            Overall_Health: {
+                trigger: 'blur',
+                validators: {
+                    stringLength: {
+                        min: 2,
+                        message: 'Please select your current health condition'
+                    }
+                }
+            },
+            button: {
+                // The submit buttons selector
+                selector: '[type="submit"]',
+
+                // The disabled class
+                disabled: 'disabled'
+            }
+        },
+    })
+    .on('success.field.fv', function(e, data) {
+        if (data.fv.getInvalidFields().length > 0) {    // There is invalid field
+            data.fv.disableSubmitButtons(true);
+        }
+    });
+});
 
 

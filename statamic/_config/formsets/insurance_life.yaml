@@ -14,9 +14,19 @@ submission_save_path: _forms/_insurance_life/
 allowed:
   - First_Name
   - Last_Name
-  - Phone_Number
+  - Gender
+  - Age
+  - Height
+  - Weight
   - Email_Address
+  - Phone_Number
+  - Secondary_Phone_Number
   - Zip_Code
+  - Current_Life_Insurance_Policy
+  - Duration
+  - Tobacco_Use
+  - Cancer_Heart_Stroke_Diabetes
+  - Overall_Health
 
 # You are not required to require fields, but once you do, any missing
 # from the POST will squash this submission and send a list of
@@ -24,9 +34,18 @@ allowed:
 required:
   - First_Name
   - Last_Name
-  - Phone_Number
+  - Gender
+  - Age
+  - Height
+  - Weight
   - Email_Address
+  - Phone_Number
   - Zip_Code
+  - Current_Life_Insurance_Policy
+  - Duration
+  - Tobacco_Use
+  - Cancer_Heart_Stroke_Diabetes
+  - Overall_Health
 
 submission_save_extension: yaml
 
