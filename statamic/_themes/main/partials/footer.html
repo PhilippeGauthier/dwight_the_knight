@@ -6,6 +6,12 @@
             <img src="{{ path src="_themes/main/img/logo_blue.png" }}" alt="Footer Logo Blue">
             </h1>
             <p>&copy; {{ current_date format="Y"}}<a href="http://cillamar.com"> Cillamar</a>. All Rights Reserved.</p>
+            <p>
+              <a href="#" data-toggle="modal" data-target="#legalDisclaimer">Legal Disclaimer</a>
+            </p>
+            <p>
+              <a href="#" data-toggle="modal" data-target="#privacyPolicy">Privacy Policy</a>
+            </p>
           </div>
           <div class="col-md-3">
             <h3>About</h3>
@@ -71,6 +77,31 @@
           </div>
         </div>
       </div>
-
-
     </footer>
+
+<div class="modal fade" id="legalDisclaimer" tabindex="-1" role="dialog" aria-labelledby="legalDisclaimer" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Legal Disclaimer</h4>
+      </div>
+      <div class="modal-body">
+        {{ globals:legal_disclaimer }}
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="privacyPolicy" tabindex="-1" role="dialog" aria-labelledby="privacyPolicy" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Privacy Policy</h4>
+      </div>
+      <div class="modal-body">
+        {{ globals:privacy_policy }}
+      </div>
+    </div>
+  </div>
+</div>

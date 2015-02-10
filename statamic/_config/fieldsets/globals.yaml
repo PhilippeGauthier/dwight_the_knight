@@ -33,6 +33,12 @@ fields:
   twitter:
     type: text
     display: Twitter
+  legal_disclaimer: 
+    type: redactor
+    display: Legal Disclaimer
+  privacy_policy:
+    type: redactor
+    display: Privacy Policy
 
 
   # add your fields here...
