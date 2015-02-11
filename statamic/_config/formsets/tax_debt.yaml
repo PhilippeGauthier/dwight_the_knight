@@ -28,7 +28,6 @@ required:
   - Last_Name
   - Email_Address
   - Phone_Number
-  - Phone_Number_Secondary
   - Zip_Code
 
 submission_save_extension: yaml

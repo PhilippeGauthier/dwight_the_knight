@@ -49,11 +49,7 @@ submission_save_extension: yaml
 
 # Apply validation rules to specific fields. Refer to documentation
 # for a full list of available rules and their format
-validate:
-  First_Name: alpha
-  Last_Name: alpha
-  Phone_Number: int
-  Zip_Code: int
+
 
 # Error messages can be mapped to your fields and passed to the
 # template upon failure. They will be available here:
