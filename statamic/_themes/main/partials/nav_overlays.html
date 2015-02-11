@@ -1,44 +1,41 @@
-    <div class="overlay main overlay-boxify" id="main">
-      <nav>
-        <ul>
-        {{ nav from="/" exclude="insurance|mortgage" }}
-          <li><a href="{{ url }}"><i class="fa {{ icon }}"></i>{{ title }}</a></li>
-        {{ /nav }}
-        {{ entries:listing folder="insurance" limit="1" }}
-          <li><a href="{{ url }}"><i class="fa {{ icon }}"></i>{{ title }}</a></li>
-        {{ /entries:listing }}
-        </ul>
-        <ul>
-        {{ entries:listing folder="insurance" limit="2" offset="1" }}
-          <li><a href="{{ url }}"><i class="fa {{ icon }}"></i>{{ title }}</a></li>
-        {{ /entries:listing }}
-        </ul>
-        <ul>
-        {{ entries:listing folder="insurance" limit="1" offset="3" }}
-          <li><a href="{{ url }}"><i class="fa {{ icon }}"></i>{{ title }}</a></li>
-        {{ /entries:listing }}
-        {{ nav from="/" exclude="insurance|tax_debt" }}
-          <li><a href="{{ url }}"><i class="fa {{ icon }}"></i>{{ title }}</a></li>
-        {{ /nav }}
-        </ul>
-      </nav>
-    </div>
+<div class="overlay overlay-boxify" id="insurance">
+  <nav>
+  <ul>
+  {{ entries:listing folder="insurance" limit="2" }}
+    <li><a href="{{ url }}"><i class="fa {{ icon }}"></i>{{ title }}</a></li>
+  {{ /entries:listing }}
+  </ul>
+  <ul>
+  {{ entries:listing folder="insurance" limit="2" offset="2" }}
+    <li><a href="{{ url }}"><i class="fa {{ icon }}"></i>{{ title }}</a></li>
+  {{ /entries:listing }}
+  </ul>
+  </nav>
+</div>
 
-    <div class="overlay insurance overlay-boxify" id="insurance">
-      <nav>
-      <ul>
-      {{ entries:listing folder="insurance" limit="2" }}
-        <li><a href="{{ url }}"><i class="fa {{ icon }}"></i>{{ title }}</a></li>
-      {{ /entries:listing }}
-      </ul>
-      <ul>
-      {{ entries:listing folder="insurance" limit="2" offset="2" }}
-        <li><a href="{{ url }}"><i class="fa {{ icon }}"></i>{{ title }}</a></li>
-      {{ /entries:listing }}
-      </ul>
-<!--         <ul>
-          <li><a href="#screenshots"><i class="fa fa-heartbeat"></i>Health Insurance</a></li>
-          <li><a href="#download"><i class="fa fa-group"></i>Final Expense</a></li>
-        </ul> -->
-      </nav>
-    </div>
+<div class="overlay main overlay-boxify" id="main">
+  <nav>
+    <ul>
+    {{ nav from="/" exclude="insurance|mortgage" }}
+      <li><a href="{{ url }}"><i class="fa {{ icon }}"></i>{{ title }}</a></li>
+    {{ /nav }}
+    {{ entries:listing folder="insurance" limit="1" }}
+      <li><a href="{{ url }}"><i class="fa {{ icon }}"></i>{{ title }}</a></li>
+    {{ /entries:listing }}
+    </ul>
+    <ul>
+    {{ entries:listing folder="insurance" limit="2" offset="1" }}
+      <li><a href="{{ url }}"><i class="fa {{ icon }}"></i>{{ title }}</a></li>
+    {{ /entries:listing }}
+    </ul>
+    <ul>
+    {{ entries:listing folder="insurance" limit="1" offset="3" }}
+      <li><a href="{{ url }}"><i class="fa {{ icon }}"></i>{{ title }}</a></li>
+    {{ /entries:listing }}
+    {{ nav from="/" exclude="insurance|tax_debt" }}
+      <li><a href="{{ url }}"><i class="fa {{ icon }}"></i>{{ title }}</a></li>
+    {{ /nav }}
+    </ul>
+  </nav>
+</div>
+

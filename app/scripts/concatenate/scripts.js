@@ -82,25 +82,44 @@ $("#main").click(function() {
 	$("#main").toggleClass("open");
 });
 
-
-/***************** Insurance Transformicon ******************/
+/***************** Nav Transformicon ******************/
 
 /* When user clicks the Icon */
 $(".insurance-toggle").click(function() {
     $(this).toggleClass("active");
-	event.preventDefault();
-	$("#insurance").toggleClass("open");
+    $("#insurance").toggleClass("open");
 });
 
-/* When user clicks a link */
+// /* When user clicks a link */
 $("#insurance ul li a").click(function() {
-	$("#insurance").toggleClass("open");
+    // $(".nav-toggle").toggleClass("active");
+    $("#insurance").toggleClass("open");
 });
 
-/* When user clicks outside */
+// /* When user clicks outside */
 $("#insurance").click(function() {
-	$("#insurance").toggleClass("open");
+    // $(".nav-toggle").toggleClass("active");
+    $("#insurance").toggleClass("open");
 });
+
+
+/***************** Insurance Transformicon ******************/
+
+// /* When user clicks the Icon */
+// $(".insurance-toggler").click(function() {
+// 	event.preventDefault();
+// 	$("#insurance").toggleClass("open");
+// });
+
+// /* When user clicks a link */
+// $("#insurance ul li a").click(function() {
+// 	$("#insurance").toggleClass("open");
+// });
+
+// /* When user clicks outside */
+// $("#insurance").click(function() {
+// 	$("#insurance").toggleClass("open");
+// });
 
 
 /***************** Smooth Scrolling ******************/
