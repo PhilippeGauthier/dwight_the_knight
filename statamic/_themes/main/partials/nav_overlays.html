@@ -1,4 +1,4 @@
-<div class="overlay overlay-boxify" id="insurance">
+<!-- <div class="overlay overlay-boxify" id="insurance">
   <nav>
   <ul>
   {{ entries:listing folder="insurance" limit="2" }}
@@ -11,7 +11,7 @@
   {{ /entries:listing }}
   </ul>
   </nav>
-</div>
+</div> -->
 
 <div class="overlay main overlay-boxify" id="main">
   <nav>
@@ -19,7 +19,7 @@
     {{ nav from="/" exclude="insurance|mortgage" }}
       <li><a href="{{ url }}"><i class="fa {{ icon }}"></i>{{ title }}</a></li>
     {{ /nav }}
-    {{ entries:listing folder="insurance" limit="1" }}
+<!--     {{ entries:listing folder="insurance" limit="1" }}
       <li><a href="{{ url }}"><i class="fa {{ icon }}"></i>{{ title }}</a></li>
     {{ /entries:listing }}
     </ul>
@@ -34,7 +34,7 @@
     {{ /entries:listing }}
     {{ nav from="/" exclude="insurance|tax_debt" }}
       <li><a href="{{ url }}"><i class="fa {{ icon }}"></i>{{ title }}</a></li>
-    {{ /nav }}
+    {{ /nav }} -->
     </ul>
   </nav>
 </div>
