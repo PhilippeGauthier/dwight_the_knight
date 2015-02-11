@@ -87,6 +87,7 @@ $("#main").click(function() {
 
 /* When user clicks the Icon */
 $(".insurance-toggle").click(function() {
+    $(this).toggleClass("active");
 	event.preventDefault();
 	$("#insurance").toggleClass("open");
 });
