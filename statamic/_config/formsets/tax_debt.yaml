@@ -52,7 +52,7 @@ messages:
 
 # Configure notification email
 email:
-  to: "travis@knightlinelegal.com, casey@mmsipi.com, jack@mmsipi.com"
+  to: "casey@mmsipi.com, jack@mmsipi.com, travis@dwighttheknight.com"
   from: admin@dwighttheknight.com
   subject: Tax Debt Lead // Dwight The Knight
   automagic: true

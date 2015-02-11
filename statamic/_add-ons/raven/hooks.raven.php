@@ -581,28 +581,24 @@ class Hooks_raven extends Hooks {
 	* @return void
 	*/
 
-	private function sendEmails($submission, $config, $event = 'create')
-	{
-		if (array_get($this->config, 'master_killswitch')) return;
+private function sendEmails($submission, $config)
+{
+    if (array_get($this->config, 'master_killswitch')) return;
 
-		// No need to continue if there is no email set
-		if ( ! $email = array_get($config, 'email', false)) return;
+    $email = array_get($config, 'email', false);
 
-		// If there's a single email config, turn it into an array anyway
-		if ($email && isset($email['to'])) {
-			$email = array($email);
-		}
+    $emailto = preg_replace('/\s+/', '', $email['to']);
+    $emailto = explode(',', $emailto);
 
-		// Only use the appropriate email event - ie. Create or Update
-		$email = array_filter($email, function($val) use ($event) {
-			return (array_get($val, 'on', 'create') == $event);
-		});
+    if($email && isset($email['to'])) {
+        foreach ($emailto as $e) {
+                $email['to'] = $e;
+                $this->send($submission, $email, $config);
+        }
 
-		// Send emails
-		foreach ($email as $e) {
-			$this->send($submission, $e, $config);
-		}
-	}
+    }
+
+}
 
 	/**
 	* Send a notification/response email
