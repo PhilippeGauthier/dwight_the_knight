@@ -20,10 +20,10 @@ send_notification_email: true
 #    - mailgun
 #    - postmark
 #    - sendgrid
-email_handler:
+email_handler: mandrill
 
 # chosen mail service's api key
-email_handler_key:
+email_handler_key:q-hk56QxJFy5jhbIc8tCqQ
 
 master_killswitch: false
 
