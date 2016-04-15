@@ -52,7 +52,7 @@ messages:
 
 # Configure notification email
 email:
-  to: "leadreports@mmsipi.com, travis@dwighttheknight.com"
+  to: "philippe@philippe.io"
   from: admin@dwighttheknight.com
   subject: Tax Debt Lead // Dwight The Knight
   automagic: true
